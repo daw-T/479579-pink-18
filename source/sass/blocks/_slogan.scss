@@ -1,0 +1,12 @@
+.slogan {
+  @include opensanslight;
+  @include f-size(24px, 30px);
+  text-align: center;
+  font-weight: 300;
+  font-style: normal;
+  color: $color-white;
+
+  &--darkcolor {
+    color: $color-dark;
+  }
+}

@@ -1,0 +1,45 @@
+.contacts {
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.contacts__description {
+  @include p-reset;
+  padding-top: 42px;
+  padding-bottom: 35px;
+  background-color: $bg-white;
+}
+
+.contacts__list {
+  @include list-reset;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: $bg-white;
+}
+
+.contacts__item {
+  padding-bottom: 23px;
+}
+
+.contacts__title {
+  @include list-reset;
+  @include opensansbold;
+  @include f-size (18px, 22px);
+  text-align: center;
+}
+
+.contacts__text,
+.contacts__text-link {
+  @include p-reset;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @include opensanslight;
+  @include f-size (24px, 30px);
+  color: $color-pink;
+}
+
+.contacts-map {
+  min-height: 200px;
+}

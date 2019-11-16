@@ -1,0 +1,29 @@
+.button,
+a.button {
+  display: block;
+  max-width: 280px;
+  padding: 18px 20px 15px 20px;
+
+  @include opensansbold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: $color-white;
+  background-color: $bg-dark;
+  border: 3px solid $color-white;
+  border-radius: 30px;
+
+  &:hover,
+  &:focus {
+    color: $color-pink;
+    background-color: $bg-white;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.disabled {
+  background-color: $bg-white;
+  color: $color-lightpink;
+  border-color: $color-gray01;
+}
