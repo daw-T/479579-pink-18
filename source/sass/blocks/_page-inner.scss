@@ -1,0 +1,25 @@
+.page-inner {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-inner__title {
+  min-height: 50px;
+
+  @include p-reset;
+  padding-top: 28px;
+  padding-bottom: 80px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-position: left 0 top -66px;
+  background-repeat: no-repeat;
+}
+
+.page-inner__description {
+  @include p-reset;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
+}

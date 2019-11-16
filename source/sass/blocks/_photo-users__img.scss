@@ -1,0 +1,55 @@
+.photo-users__list {
+  @include list-reset;
+}
+
+.photo-users__item {
+  padding-bottom: 20px;
+}
+
+.photo-users__img {
+  width: 280px;
+  height: 180px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  &--panorama {
+    width: 320px;
+    height: 137px;
+  }
+}
+
+.photo-users__description {
+  width: 258px;
+  margin: 0 auto;
+  padding: 17px 5px 22px 17px;
+  background-color: $bg-lightgray;
+}
+
+.photo-users__title {
+  display: block;
+  font-weight: bold;
+}
+
+.photo-users__time-ago {
+  @include opensanslight;
+  @include f-size(12px, 24px);
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.photo-users__text {
+  @include p-reset;
+  padding-bottom: 8px;
+}
+
+.photo-users__likes {
+  display: flex;
+
+  @include p-reset;
+  padding-left: 33px;
+  color: $color-pink;
+}
+
+.photo-users__number-likes {
+  padding-left: 2px;
+}

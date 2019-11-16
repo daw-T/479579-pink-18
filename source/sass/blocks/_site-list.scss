@@ -1,0 +1,23 @@
+.site-list {
+  @include list-reset;
+  text-align: center;
+}
+
+.site-list__item {
+  border-top: 1px solid #000000;
+  box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+}
+
+.site-list__link {
+  position: relative;
+  display: inline-block;
+  vertical-align: center;
+  padding-top: 17px;
+  padding-bottom: 14px;
+
+  @include opensansbold;
+  font-size: 18px;
+  line-height: 32px;
+  color: $color-white;
+  text-transform: uppercase;
+}

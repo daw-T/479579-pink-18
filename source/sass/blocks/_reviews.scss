@@ -1,0 +1,28 @@
+.reviews {
+  margin-bottom: 10px;
+}
+
+.reviews__list {
+  text-align: center;
+}
+
+.reviews__autor {
+  @include p-reset;
+  margin-bottom: 15px;
+}
+
+.reviews__text {
+  width: 280px;
+
+  @include p-reset;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  @include f-size(14px, 30px);
+}
+
+.reviews__toggles {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}

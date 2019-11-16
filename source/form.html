@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
   <title>Фотографии пользователей с Pink становятся еще лучше</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+  <meta name="format-detection" content="telephone=no">
   <link href="css/normalize.css" rel="stylesheet">
-  <link rel="preload" href="fonts/open-sans-v17-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/open-sans-v17-latin_cyrillic-regular.woff" as="font" crossorigin="anonymous">
-  <!--  <link href="css/style.css" rel="stylesheet">-->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
@@ -44,7 +44,7 @@
   <h1 class="page-inner__title">Конкурс на самое безбашенное путешествие с ПИНК</h1>
   <p class="page-inner__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
     бонусную карту!</p>
-  <section>
+  <section class="form">
     <form class="form__basic" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form__pink-data">
         <div>
@@ -124,6 +124,7 @@
       <button class="button form__button" type="submit">Отправить форму</button>
     </form>
     <p class="form__note">* — Обязательные поля</p>
+    </div>
   </section>
 </main>
 <footer class="page-footer">
