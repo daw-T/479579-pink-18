@@ -8,7 +8,7 @@
   opacity: 1;
 }
 
-.page-header__wriper {
+.page-header__logo-wrapper {
   display: flex;
   justify-content: space-between;
   width: 280px;
@@ -34,7 +34,7 @@
   content: "";
   height: 24px;
   display: block;
-  background: $bg-dark url("../../img/icon-menu-burger.svg") no-repeat 50% 50%;
+  background: $bg-dark url("../img/icon-menu-burger.svg") no-repeat 50% 50%;
   background-size: 50px auto;
 }
 
@@ -42,6 +42,41 @@
   content: "";
   height: 24px;
   display: block;
-  background: $bg-dark url("../../img/icon-menu-cross.svg") no-repeat 50% 50%;
+  background: $bg-dark url("../img/icon-menu-cross.svg") no-repeat 50% 50%;
   background-size: 25px auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 660px;
+  }
+
+  .page-header__logo-wrapper {
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 100%;
+    background-color: rgba(41, 54, 70, 0.7);
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 130px;
+  }
+
+  .page-header__logo-wrapper {
+    display: flex;
+    width: 233px;
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
 }

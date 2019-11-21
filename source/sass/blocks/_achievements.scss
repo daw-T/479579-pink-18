@@ -1,0 +1,52 @@
+.achievements {
+  @include fildset-reset;
+  padding-left: 22px;
+  padding-right: 21px;
+  background-color: $bg-lightgray;
+}
+
+.achievements__item {
+  display: flex;
+  margin-bottom: 45px;
+
+  &:last-child {
+    margin-bottom: 42px;
+  }
+}
+
+.achievements__checkbox[type="checkbox"] {
+  display: none;
+}
+
+.achievements__label {
+  position: relative;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  padding-left: 68px;
+
+  @include f-size(18px, 30px);
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 33px;
+    height: 33px;
+    background-color: $bg-white;
+    border: 1px solid $color-gray;
+    cursor: pointer;
+  }
+}
+
+.achievements__checkbox:checked + .achievements__label::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 8px;
+  width: 22px;
+  height: 17px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

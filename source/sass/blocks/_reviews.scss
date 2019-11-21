@@ -9,6 +9,13 @@
 .reviews__autor {
   @include p-reset;
   margin-bottom: 15px;
+
+  @include opensansbold;
+  @include f-size(18px, 24px);
+}
+
+.reviews__autor-add {
+  display: none;
 }
 
 .reviews__text {
@@ -25,4 +32,65 @@
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .reviews__autor {
+    @include opensansbold;
+    @include f-size(20px, 30px);
+    margin-bottom: 30px;
+  }
+
+  .reviews__text {
+    width: 620px;
+    margin-bottom: 36px;
+
+    @include f-size(18px, 30px);
+  }
+
+  .reviews__autor-add {
+    display: block;
+    padding-top: 0;
+
+    @include opensans;
+    @include f-size(14px, 30px);
+  }
+
+  .reviews__toggles {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 180px;
+    padding-bottom: 40px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .reviews__autor {
+    @include f-size(24px, 30px);
+    margin-bottom: 0;
+  }
+
+  .reviews__text {
+    width: 685px;
+    margin-bottom: 40px;
+  }
+
+  .reviews__autor-add {
+    @include f-size(18px, 30px);
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
 }

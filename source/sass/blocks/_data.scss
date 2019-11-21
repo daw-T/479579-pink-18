@@ -1,0 +1,26 @@
+.data {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+
+  @include fildset-reset;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-bottom: 26px;
+}
+
+.data__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  &:first-child {
+    margin-top: 33px;
+  }
+}
+
+.data__contacts {
+  @include form-title;
+  padding-left: 20px;
+  margin-bottom: 6px;
+}

@@ -7,3 +7,14 @@
     display: block;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: flex;
+  }
+
+  .main-nav__list {
+    display: flex;
+    align-items: center;
+  }
+}

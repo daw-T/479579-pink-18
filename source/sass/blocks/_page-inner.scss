@@ -11,7 +11,7 @@
   padding-bottom: 80px;
   padding-left: 35px;
   padding-right: 35px;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: left 0 top -66px;
   background-repeat: no-repeat;
 }
@@ -22,4 +22,16 @@
   padding-bottom: 50px;
   padding-left: 35px;
   padding-right: 35px;
+
+  &--form {
+    padding-top: 18px;
+    padding-bottom: 0;
+    padding-left: 22px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  width: 660px;
+  margin: 0;
 }

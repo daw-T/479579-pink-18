@@ -1,0 +1,25 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 46px;
+}
+
+.comment__title {
+  display: flex;
+  justify-content: center;
+
+  @include p-reset;
+  @include form-title;
+  margin-bottom: 10px;
+}
+
+.comment__text {
+  @include p-reset;
+  padding: 15px 20px 5px 20px;
+
+  @include f-size(18px, 30px);
+  background-color: transparent;
+  border: 2px solid $color-gray;
+}
