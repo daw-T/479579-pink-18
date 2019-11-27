@@ -1,0 +1,9 @@
+.container {
+  margin: 0 auto; //центрирование
+  width: 100%;
+  min-width: 320px; //ограничивает минимальную ширину
+  max-width: 960px; // ограничивает максимальную ширину
+  padding-left: 20px;
+  padding-right: 20px;
+  //background-color: rgba(255, 255, 204, 0.2); /*временно*/
+}

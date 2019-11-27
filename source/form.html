@@ -7,7 +7,7 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
   <meta name="format-detection" content="telephone=no">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="sass/normalize.scss" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +15,11 @@
   <div class="page-header__wriper">
     <a class="logo">
       <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
         <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения Pink">
+        <!--          <img class="logo__image" src="img/logo-pink-white-tablet.svg" width="146" height="40" alt="Логотип приложения Pink">-->
+        <!--          <img class="logo__image" src="img/logo-pink-white-desktop.svg" width="146" height="40" alt="Логотип приложения Pink">-->
       </picture>
     </a>
     <button class="page-header__toggle page-header__toggle--invisible" type="button">

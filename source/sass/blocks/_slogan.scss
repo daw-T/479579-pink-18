@@ -16,6 +16,10 @@
   .slogan {
     @include f-size(40px, 48px);
   }
+
+  .slogan__big {
+    @include f-size(50px, 60px);
+  }
 }
 
 @media (min-width: $desktop-width) {

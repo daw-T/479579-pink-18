@@ -1,3 +1,13 @@
+.html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   min-width: 320px;
   margin: 0;
@@ -30,12 +40,4 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    background-image: url("../img/bg-back-desktop@1x.jpg"), linear-gradient($bg-dark 853px, $bg-white 853px);
-    background-position: top center;
-    background-repeat: no-repeat;
-  }
 }

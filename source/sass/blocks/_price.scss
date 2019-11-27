@@ -1,6 +1,11 @@
 .price {
   padding-top: 80px;
   background-color: $bg-lightgray;
+}
+
+.price__wrapper {
+  width: 320px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -113,14 +118,19 @@
   display: flex;
   justify-content: center;
   padding-top: 35px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .price {
-    overflow: visible;
-    padding-top: 81px;
+    padding-top: 85px;
     padding-bottom: 65px;
+  }
+
+  .price__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    overflow: visible;
   }
 
   .price__table {

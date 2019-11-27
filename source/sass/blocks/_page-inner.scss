@@ -1,4 +1,6 @@
 .page-inner {
+  display: flex;
+  flex-direction: column;
   width: 320px;
   margin: 0 auto;
 }
@@ -11,17 +13,18 @@
   padding-bottom: 80px;
   padding-left: 35px;
   padding-right: 35px;
+  background-color: $bg-dark;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: left 0 top -66px;
+  background-position: left 50% top -66px;
   background-repeat: no-repeat;
 }
 
 .page-inner__description {
   @include p-reset;
+  width: 250px;
+  margin: 0 auto;
   padding-top: 45px;
   padding-bottom: 50px;
-  padding-left: 35px;
-  padding-right: 35px;
 
   &--form {
     padding-top: 18px;
@@ -32,6 +35,23 @@
 }
 
 @media (min-width: $tablet-width) {
-  width: 660px;
-  margin: 0;
+  .page-inner {
+    width: 660px;
+  }
+
+  .page-inner__title {
+    min-height: 118px;
+    padding-top: 70px;
+    padding-bottom: 140px;
+    padding-left: 156px;
+    padding-right: 156px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: left 50% top -110px;
+  }
+
+  .page-inner__description {
+    width: 450px;
+    padding-top: 90px;
+    padding-bottom: 77px;
+  }
 }

@@ -7,15 +7,19 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
   <meta name="format-detection" content="telephone=no">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="sass/normalize.scss" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
-  <div class="page-header__wriper">
+  <div class="page-header__logo-wrapper">
     <a class="logo">
       <picture>
-        <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения Pink">
+        <!--          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">-->
+        <!--          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">-->
+        <!--                            <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения Pink">-->
+        <img class="logo__image" src="img/logo-pink-white-tablet.svg" width="146" height="40" alt="Логотип приложения Pink">
+        <!--          <img class="logo__image" src="img/logo-pink-white-desktop.svg" width="146" height="40" alt="Логотип приложения Pink">-->
       </picture>
     </a>
     <button class="page-header__toggle page-header__toggle--invisible" type="button">
@@ -41,7 +45,7 @@
 </header>
 
 <main class="page-inner">
-  <h1 class="page-inner__title slogan">Фотографии пользователей</h1>
+  <h1 class="page-inner__title slogan slogan__big">Фотографии пользователей</h1>
   <p class="page-inner__description section-description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
   <section class="photo-users">
     <h2 class="visually-hidden">Фотографии с описаниями</h2>
@@ -49,6 +53,8 @@
       <li class="photo-users__item">
         <div class="photo-users__img photo-users__img--panorama">
           <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
             <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Вид с вышки. Прыгать или нет?">
           </picture>
         </div>

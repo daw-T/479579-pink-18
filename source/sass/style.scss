@@ -2,6 +2,7 @@
 @import "variables";
 @import "mixins";
 @import "blocks/scaffolding";
+@import "blocks/container";
 @import "blocks/outlines"; /*временный фон*/
 @import "blocks/page-header";
 @import "blocks/logo";
@@ -18,7 +19,7 @@
 @import "blocks/slider__list";
 @import "blocks/contacts";
 @import "blocks/page-inner";
-@import "blocks/photo-users__img";
+@import "blocks/photo-users";
 @import "blocks/section-description";
 @import "blocks/your-photo";
 @import "blocks/tools";
