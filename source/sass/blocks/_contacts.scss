@@ -32,8 +32,6 @@
 
   @include p-reset;
   margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
 
   @include opensanslight;
   @include f-size (24px, 30px);
@@ -49,7 +47,8 @@
 
 @media (min-width: $tablet-width) {
   .contacts__description {
-    width: 400px;
+    //width: 400px;
+    width: 100%;
     padding-top: 50px;
     padding-bottom: 45px;
     padding-left: 145px;
@@ -89,9 +88,6 @@
 
   .contacts__text,
   .contacts__text-link {
-    padding-right: 0;
-    padding-left: 0;
-
     @include f-size (24px, 34px);
   }
 
@@ -111,11 +107,12 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    width: auto;
+    width: 100%;
   }
 
   .contacts__description {
-    width: 570px;
+    //width: 570px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
     padding-top: 62px;
@@ -155,9 +152,6 @@
 
   .contacts__text,
   .contacts__text-link {
-    padding-right: 0;
-    padding-left: 0;
-
     @include f-size (24px, 34px);
   }
 
