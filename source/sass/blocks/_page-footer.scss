@@ -1,5 +1,4 @@
 .page-footer {
-  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -14,12 +13,15 @@
 }
 
 .page-footer__logo {
-  display: block;
-  margin-bottom: 30px;
+  display: flex;
+  margin-bottom: 40px;
+  outline: 1px solid yellow; //временно
 }
 
 .page-footer__social {
+  display: flex;
   margin-bottom: 25px;
+  outline: 1px solid yellow; //временно
 }
 
 .page-footer__copyright {
@@ -27,6 +29,7 @@
   justify-content: space-between;
   align-items: center;
   width: 140px;
+  outline: 1px solid yellow; //временно
 }
 
 .page-footer__copyright-text {
@@ -35,34 +38,31 @@
 }
 
 .page-footer__copyright-logo {
-  margin-top: 9px;
+  margin-top: 15px;
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
-    margin-bottom: 0;
-  }
-
   .page-footer__index {
     display: block;
+    width: 100%;
   }
 
   .page-footer__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    //width: 660px - 20px - 13px;
-    margin: 0 auto;
-    margin-top: 37px;
-    padding-left: 20px;
-    padding-right: 13px;
+    align-items: center;
     //border: 1px solid dodgerblue;
   }
 
-  .page-footer__social {
+  .page-footer__logo {
     margin-bottom: 0;
-    margin-left: -13px;
+  }
+
+  .page-footer__social {
+    margin-top: 9px;
+    margin-bottom: 0;
+    margin-left: -10px;
   }
 
   .page-footer__copyright {
@@ -72,21 +72,15 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    width: 960px;
-    padding-left: 10px;
-    padding-right: 6px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .page-footer__wrapper {
-    width: 944px;
-    margin-top: 72px;
     margin-bottom: 72px;
     padding: 0;
-    //border: 1px solid dodgerblue;
-  }
-
-  .page-footer__logo {
-    margin-bottom: 0;
   }
 
   .page-footer__social {

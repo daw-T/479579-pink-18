@@ -12,36 +12,40 @@
 </head>
 <body>
 <header class="page-header">
-  <div class="page-header__wriper">
-    <a class="logo">
-      <picture>
-        <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-        <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения Pink">
-        <!--          <img class="logo__image" src="img/logo-pink-white-tablet.svg" width="146" height="40" alt="Логотип приложения Pink">-->
-        <!--          <img class="logo__image" src="img/logo-pink-white-desktop.svg" width="146" height="40" alt="Логотип приложения Pink">-->
-      </picture>
-    </a>
-    <button class="page-header__toggle page-header__toggle--invisible" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
+  <div class="container">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo-wrapper">
+        <a class="logo">
+          <picture>
+            <!--          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">-->
+            <!--          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">-->
+            <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения Pink">
+            <!--            <img class="logo__image" src="img/logo-pink-white-tablet.svg" width="146" height="40" alt="Логотип приложения Pink">-->
+            <!--          <img class="logo__image" src="img/logo-pink-white-desktop.svg" width="146" height="40" alt="Логотип приложения Pink">-->
+          </picture>
+        </a>
+        <button class="page-header__toggle page-header__toggle--invisible" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <nav class="main-nav main-nav--opened">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link site-list__link--active">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html" class="site-list__link">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list__link">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
-  <nav class="main-nav main-nav--opened">
-    <ul class="main-nav__list site-list">
-      <li class="site-list__item site-list__item--active">
-        <a href="index.html" class="site-list__link">Главная</a>
-      </li>
-      <li class="site-list__item">
-        <a href="photo.html" class="site-list__link">Фотографии</a>
-      </li>
-      <li class="site-list__item">
-        <a class="site-list__link">Конкурс</a>
-      </li>
-      <li class="site-list__item">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list__link">HTML Academy</a>
-      </li>
-    </ul>
-  </nav>
 </header>
 
 <main class="page-inner">
