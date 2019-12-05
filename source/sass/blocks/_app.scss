@@ -3,7 +3,8 @@
   margin-bottom: 30px;
   padding-left: 22px;
   padding-right: 21px;
-  background-color: $bg-lightgray;
+  //background-color: $bg-lightgray;
+  order: 4;
 }
 
 .app__item {
@@ -51,4 +52,10 @@
   background-color: $color-pink;
   border: 11px solid $bg-white;
   border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .app {
+    order: 2;
+  }
 }

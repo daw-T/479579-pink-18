@@ -1,8 +1,18 @@
 .achievements {
   @include fildset-reset;
-  padding-left: 22px;
-  padding-right: 21px;
-  background-color: $bg-lightgray;
+  //background-color: $bg-lightgray;
+  //width: 280px; //временно
+  //margin: 0 auto;
+  order: 2;
+  outline: 1px solid blueviolet;
+}
+
+.achievements__title {
+  width: 250px;
+
+  &--app {
+    margin-bottom: 38px;
+  }
 }
 
 .achievements__item {
@@ -49,4 +59,10 @@
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .app {
+    order: 4;
+  }
 }

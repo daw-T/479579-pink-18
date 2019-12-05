@@ -1,21 +1,20 @@
 .data {
   display: flex;
   flex-direction: column;
-  width: 280px;
 
   @include fildset-reset;
-  padding-left: 22px;
-  padding-right: 22px;
-  margin-bottom: 26px;
+  margin-bottom: 30px;
 }
 
 .data__item {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  margin-bottom: 16px;
+  order: 1;
 
   &:first-child {
-    margin-top: 33px;
+    margin-top: 2px;
   }
 }
 
@@ -23,4 +22,37 @@
   @include form-title;
   padding-left: 20px;
   margin-bottom: 6px;
+}
+
+@media (min-width: $tablet-width) {
+  .data {
+    margin-bottom: 0;
+  }
+
+  .data__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 52px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .data__contacts {
+    padding-left: 0;
+    padding-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .data__contacts-info {
+    order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .data {
+    width: 440px;
+  }
 }

@@ -1,0 +1,20 @@
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+
+  @include fildset-reset;
+  margin-bottom: 30px;
+  order: 3;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-info {
+    order: 3;
+  }
+}
+
+//@media (min-width: $desktop-width) {
+//  .contacts-info {
+//
+//  }
+//}

@@ -17,11 +17,9 @@
       <div class="page-header__logo-wrapper">
         <a class="logo">
           <picture>
-            <!--          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">-->
-            <!--          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">-->
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
             <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения Pink">
-            <!--            <img class="logo__image" src="img/logo-pink-white-tablet.svg" width="146" height="40" alt="Логотип приложения Pink">-->
-            <!--          <img class="logo__image" src="img/logo-pink-white-desktop.svg" width="146" height="40" alt="Логотип приложения Pink">-->
           </picture>
         </a>
         <button class="page-header__toggle page-header__toggle--invisible" type="button">
@@ -49,62 +47,29 @@
 </header>
 
 <main class="page-inner">
-  <h1 class="page-inner__title slogan">Конкурс на самое безбашенное путешествие с ПИНК</h1>
-  <p class="page-inner__description page-inner__description--form section-description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-    бонусную карту!</p>
+  <div class="page-bg">
+    <h1 class="page-inner__title slogan slogan__big">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </div>
+  <div class="container">
+    <p class="page-inner__description page-inner__description--form section-description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+      бонусную карту! <span class="page-inner__description--span">Пожалуйста, заполните форму ниже:</span></p>
+  </div>
   <section class="form">
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form class="form__wrapper" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="data">
-        <div class="data__item">
-          <label class="data__contacts" for="form__surname">Фамилия: </label>
-          <input class="form__input" id="form__surname" type="text" name="pink-surname" required placeholder="Укажите фамилию *" autofocus>
-        </div>
-        <div class="data__item">
-          <label class="data__contacts" for="form__name">Имя:</label>
-          <input class="form__input" id="form__name" type="text" name="pink-name" required placeholder="Введите ваше имя *">
-        </div>
-        <div class="data__item">
-          <label class="data__contacts" for="form__patronymic">Отчество:</label>
-          <input class="form__input" id="form__patronymic" type="text" name="pink-patronymic" placeholder="Ну и отчество тоже">
-        </div>
-      </fieldset>
-
-      <fieldset class="achievements">
-        <h3 class="form__title">Ваши безбашенные достижения в путешествии</h3>
-        <div class="achievements__item">
-          <input class="achievements__checkbox" type="checkbox" name="achievements" value="selfie" id="achievements__selfie" checked>
-          <label class="achievements__label" for="achievements__selfie">Сделал сэлфи с акулой</label>
-        </div>
-        <div class="achievements__item">
-          <input class="achievements__checkbox" type="checkbox" name="achievements" value="sunburned" id="achievements__sunburned" checked>
-          <label class="achievements__label" for="achievements__sunburned">Обгорел на пляже</label>
-        </div>
-        <div class="achievements__item">
-          <input class="achievements__checkbox" type="checkbox" name="achievements" value="chucknorris" id="achievements__chucknorris">
-          <label class="achievements__label" for="achievements__chucknorris">Видел Чака Норриса</label>
-        </div>
-        <div class="achievements__item">
-          <input class="achievements__checkbox" type="checkbox" name="achievements" value="souvenirs" id="achievements__souvenirs">
-          <label class="achievements__label" for="achievements__souvenirs">Накупил сувениров</label>
-        </div>
-        <div class="achievements__item">
-          <input class="achievements__checkbox" type="checkbox" name="achievements" value="tower" id="achievements__tower" checked>
-          <label class="achievements__label" for="achievements__tower">Удержал башню</label>
-        </div>
-        <div class="achievements__item">
-          <input class="achievements__checkbox" type="checkbox" name="achievements" value="hotel" id="achievements__hotel">
-          <label class="achievements__label" for="achievements__hotel">Разгромил отель </label>
-        </div>
-      </fieldset>
-
-      <fieldset class="data">
-        <div class="data__item">
-          <label class="data__contacts" for="form__phone">Номер телефона</label>
-          <input class="form__input" id="form__phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
-        </div>
-        <div class="data__item">
-          <label class="data__contacts" for="form__mail">Адрес почты</label>
-          <input class="form__input" id="form__mail" type="email" name="mail" required placeholder="Введите почту*">
+        <div class="container">
+          <div class="data__item">
+            <label class="data__contacts" for="form__surname">Фамилия: </label>
+            <input class="form__input" id="form__surname" type="text" name="pink-surname" required placeholder="Укажите фамилию *" autofocus>
+          </div>
+          <div class="data__item">
+            <label class="data__contacts" for="form__name">Имя:</label>
+            <input class="form__input" id="form__name" type="text" name="pink-name" required placeholder="Введите ваше имя *">
+          </div>
+          <div class="data__item">
+            <label class="data__contacts" for="form__patronymic">Отчество:</label>
+            <input class="form__input" id="form__patronymic" type="text" name="pink-patronymic" placeholder="Ну и отчество тоже">
+          </div>
         </div>
       </fieldset>
 
@@ -123,6 +88,49 @@
           <label class="app__label" for="form__pink-windowsphone">Windows Phone</label>
         </div>
       </fieldset>
+
+      <fieldset class="achievements">
+        <div class="container">
+          <h3 class="achievements__title form__title">Ваши безбашенные достижения в путешествии</h3>
+          <div class="achievements__item">
+            <input class="achievements__checkbox" type="checkbox" name="achievements" value="selfie" id="achievements__selfie" checked>
+            <label class="achievements__label" for="achievements__selfie">Сделал сэлфи с акулой</label>
+          </div>
+          <div class="achievements__item">
+            <input class="achievements__checkbox" type="checkbox" name="achievements" value="sunburned" id="achievements__sunburned" checked>
+            <label class="achievements__label" for="achievements__sunburned">Обгорел на пляже</label>
+          </div>
+          <div class="achievements__item">
+            <input class="achievements__checkbox" type="checkbox" name="achievements" value="chucknorris" id="achievements__chucknorris">
+            <label class="achievements__label" for="achievements__chucknorris">Видел Чака Норриса</label>
+          </div>
+          <div class="achievements__item">
+            <input class="achievements__checkbox" type="checkbox" name="achievements" value="souvenirs" id="achievements__souvenirs">
+            <label class="achievements__label" for="achievements__souvenirs">Накупил сувениров</label>
+          </div>
+          <div class="achievements__item">
+            <input class="achievements__checkbox" type="checkbox" name="achievements" value="tower" id="achievements__tower" checked>
+            <label class="achievements__label" for="achievements__tower">Удержал башню</label>
+          </div>
+          <div class="achievements__item">
+            <input class="achievements__checkbox" type="checkbox" name="achievements" value="hotel" id="achievements__hotel">
+            <label class="achievements__label" for="achievements__hotel">Разгромил отель </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="contacts-info">
+        <h3 class="form__title">Контактная информация</h3>
+        <div class="data__item">
+          <label class="data__contacts" for="form__phone">Номер телефона</label>
+          <input class="form__input" id="form__phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+        </div>
+        <div class="data__item">
+          <label class="data__contacts" for="form__mail">Адрес почты</label>
+          <input class="form__input" id="form__mail" type="email" name="mail" required placeholder="Введите почту*">
+        </div>
+      </fieldset>
+
       <div class="comment">
         <h3 class="comment__title">Опишите свои эмоции</h3>
         <label class="visually-hidden" for="form__text">Текст комментария</label>

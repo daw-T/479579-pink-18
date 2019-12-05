@@ -1,33 +1,35 @@
 .form {
+  margin-top: 32px;
   margin-bottom: 55px;
 }
 
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__input {
+  width: 100%;
+
   @include f-size(18px, 30px);
-  margin-bottom: 16px;
   padding: 13px 20px 16px 20px;
   border: 2px solid $color-gray;
   background-color: transparent; /*временно, потом убрать*/
 }
 
 .form__title {
-  width: 250px;
-
   @include form-title;
   @include p-reset;
-  line-height: 18px;
   margin: 0 auto;
   margin-bottom: 42px;
-  padding-top: 35px;
+  padding-top: 32px;
+  line-height: 18px;
   text-align: center;
-
-  &--app {
-    margin-bottom: 38px;
-  }
 }
 
 .form__button {
   margin-bottom: 35px;
+  order: 5;
 }
 
 .form__note {
@@ -37,8 +39,15 @@
 
   @include f-size(14px, 30px);
   text-transform: uppercase;
+  order: 5;
 }
 
 .form__note-pink {
   color: $color-pink;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    margin-top: 0;
+  }
 }

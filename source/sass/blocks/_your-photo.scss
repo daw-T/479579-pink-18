@@ -1,6 +1,6 @@
 .your-photo {
   margin-bottom: 42px;
-  //background-color: $bg-lightgray;
+  background-color: $bg-lightgray;
 }
 
 .your-photo__description-wrapper {
@@ -20,7 +20,6 @@
 .your-photo__wrapper {
   padding-top: 20px;
   border-bottom: 1px solid $color-gray;
-  outline: 1px solid red; //временно
 }
 
 .your-photo__image {
@@ -31,8 +30,7 @@
 
 .your-photo__img {
   width: 280px;
-  height: 375px;
-  margin: 0 auto;
+  height: auto;
 }
 
 .your-photo__tools {
@@ -84,7 +82,7 @@
 
   .your-photo__img {
     width: 300px;
-    height: 400px;
+    height: auto;
   }
 
   .your-photo__tools {
@@ -116,7 +114,6 @@
     padding-bottom: 50px;
     padding-right: 0;
     padding-left: 15px;
-    border-bottom: 1px solid $color-gray;
   }
 
   .your-photo__tools {
