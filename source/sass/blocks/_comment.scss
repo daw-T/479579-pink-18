@@ -1,9 +1,11 @@
 .comment {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 100%;
+
+  @include fildset-reset;
   margin: 0 auto;
-  margin-bottom: 46px;
+  margin-bottom: 50px;
   order: 5;
 }
 
@@ -12,15 +14,56 @@
   justify-content: center;
 
   @include p-reset;
-  @include form-title;
+  @include title-form;
+  margin: 0 auto;
   margin-bottom: 10px;
 }
 
 .comment__text {
+  width: 100%;
+
   @include p-reset;
-  padding: 15px 20px 5px 20px;
+  padding: 14px 10px 62px 20px;
 
   @include f-size(18px, 30px);
   background-color: transparent;
   border: 2px solid $color-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    width: 100%;
+    margin-bottom: 67px;
+    padding-left: 60px;
+    padding-right: 58px;
+    padding-bottom: 53px;
+    border: 2px solid $bg-lightgray;
+  }
+
+  .comment__title {
+    width: 255px;
+    margin: 0 auto;
+    margin-top: -17px;
+    margin-bottom: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: $bg-white;
+  }
+
+  .comment__text {
+    padding: 13px 5px 55px 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+    margin-bottom: 65px;
+    padding-bottom: 44px;
+  }
+
+  .comment__text {
+    padding: 15px 10px 12px 20px;
+
+    @include f-size(18px, 24px);
+  }
 }

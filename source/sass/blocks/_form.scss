@@ -12,34 +12,42 @@
   width: 100%;
 
   @include f-size(18px, 30px);
-  padding: 13px 20px 16px 20px;
+  padding: 14px 20px 15px 20px;
   border: 2px solid $color-gray;
-  background-color: transparent; /*временно, потом убрать*/
+  background-color: transparent; //временно
 }
 
 .form__title {
-  @include form-title;
+  @include title-form;
   @include p-reset;
   margin: 0 auto;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   padding-top: 32px;
   line-height: 18px;
   text-align: center;
+
+  &--stealth { //заголовка то нет, то есть
+    display: none;
+  }
 }
 
-.form__button {
-  margin-bottom: 35px;
+.form__button-wrapper {
+  display: flex;
+  flex-direction: column;
   order: 5;
 }
 
 .form__note {
-  width: 280px;
   margin: 0 auto;
+  margin-top: 35px;
   text-align: center;
 
   @include f-size(14px, 30px);
   text-transform: uppercase;
-  order: 5;
+}
+
+.form__note-stealth { //спана то нет, то есть
+  display: none;
 }
 
 .form__note-pink {
@@ -49,5 +57,38 @@
 @media (min-width: $tablet-width) {
   .form {
     margin-top: 0;
+    margin-bottom: 75px;
+  }
+
+  .form__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__title--stealth { //заголовка то нет, то есть
+    display: block;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .form__note {
+    margin: 0;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    margin-bottom: 60px;
+  }
+
+  .form__note-stealth {
+    display: inline;
   }
 }

@@ -23,7 +23,7 @@
   margin: 0 auto;
   padding-top: 45px;
 
-  &--span {
+  &--stealth {
     display: none;
   }
 }
@@ -46,10 +46,10 @@
   .page-inner__description {
     max-width: 500px;
     padding-top: 90px;
-    padding-bottom: 72px;
+    padding-bottom: 75px;
     //width: 100%; /*временно*/
 
-    &--span {
+    &--stealth {
       display: inline;
     }
   }
@@ -57,7 +57,7 @@
 
 @media (min-width: $desktop-width) {
   .page-bg {
-    min-height: 280px;
+    min-height: 285px;
     //background-image: none; /*временно*/
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: top -110px center;
@@ -71,7 +71,7 @@
 
   .page-inner__description {
     max-width: 760px;
-    padding-top: 95px;
-    padding-bottom: 85px;
+    padding-top: 90px;
+    padding-bottom: 72px;
   }
 }

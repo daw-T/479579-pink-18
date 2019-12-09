@@ -1,7 +1,7 @@
 .button,
 a.button {
   display: block;
-  max-width: 280px;
+  width: 280px;
   padding: 16px 20px 15px 20px;
 
   @include opensansbold;
@@ -62,13 +62,19 @@ a.button--form {
   }
 }
 
-@media (min-width: $desktop-width) {
-  .button,
-  a.button {
-    @include f-size(21px, 18px);
-    padding: 13px 20px 15px 20px;
+@media (min-width: $tablet-width) {
+  .button--form,
+  a.button--form {
+    width: 300px;
+    margin: 0;
   }
 }
+
+
+//@media (min-width: $desktop-width) {
+// padding: 13px 20px 15px 20px;
+//  }
+//}
 
 //.disabled {
 //  background-color: rgba(255, 255, 255, 0, 3);

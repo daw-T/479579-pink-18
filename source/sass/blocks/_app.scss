@@ -1,10 +1,14 @@
 .app {
   @include fildset-reset;
   margin-bottom: 30px;
-  padding-left: 22px;
-  padding-right: 21px;
   //background-color: $bg-lightgray;
   order: 4;
+  //outline: 1px solid #d22856;//временно
+}
+
+.app__title {
+  margin-bottom: 37px;
+  padding-top: 37px;
 }
 
 .app__item {
@@ -32,10 +36,11 @@
     position: absolute;
     content: "";
     top: -2px;
-    left: -2px;
-    width: 37px;
-    height: 37px;
-    background-color: $bg-white;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    //background-color: $bg-white;
+    background-color: transparent; //временно
     border: 2px solid $color-gray;
     border-radius: 50%;
     cursor: pointer;
@@ -45,17 +50,54 @@
 .app__checkbox:checked + .app__label::after {
   position: absolute;
   content: "";
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 12px;
   width: 15px;
   height: 15px;
   background-color: $color-pink;
-  border: 11px solid $bg-white;
+  //border: 11px solid $bg-white;
   border-radius: 50%;
 }
 
 @media (min-width: $tablet-width) {
   .app {
+    width: 100%;
+    margin-bottom: 55px;
+    padding-bottom: 10px;
+    border: 2px solid $bg-lightgray;
     order: 2;
+  }
+
+  .app__wrapper {
+    padding-left: 60px;
+    padding-right: 58px;
+  }
+
+  .app__title {
+    padding-top: 5px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-bottom: 45px;
+  }
+
+  .app__label {
+    padding-left: 56px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .app {
+    width: 435px;
+    padding: 0;
+  }
+
+  .app__title {
+    margin-bottom: 47px;
+    padding: 0;
+    width: 400px;
+  }
+
+  .app__wrapper {
+    padding-left: 75px;
   }
 }
