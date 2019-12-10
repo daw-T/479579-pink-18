@@ -21,7 +21,7 @@
 .data__contacts {
   @include title-form;
   padding-left: 20px;
-  margin-bottom: 7px;
+  margin-bottom: 6px;
 }
 
 @media (min-width: $tablet-width) {

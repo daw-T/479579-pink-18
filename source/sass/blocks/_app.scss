@@ -1,9 +1,5 @@
 .app {
   @include fildset-reset;
-  margin-bottom: 30px;
-  //background-color: $bg-lightgray;
-  order: 4;
-  //outline: 1px solid #d22856;//временно
 }
 
 .app__title {
@@ -62,10 +58,8 @@
 @media (min-width: $tablet-width) {
   .app {
     width: 100%;
-    margin-bottom: 55px;
     padding-bottom: 10px;
     border: 2px solid $bg-lightgray;
-    order: 2;
   }
 
   .app__wrapper {
@@ -87,7 +81,7 @@
 
 @media (min-width: $desktop-width) {
   .app {
-    width: 435px;
+    width: 100%;
     padding: 0;
   }
 
