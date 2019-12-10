@@ -1,25 +1,77 @@
-.page-inner {
-  width: 320px;
+.page-bg {
+  width: 100%;
+  min-height: 170px;
   margin: 0 auto;
-}
-
-.page-inner__title {
-  min-height: 50px;
-
-  @include p-reset;
-  padding-top: 28px;
-  padding-bottom: 80px;
-  padding-left: 35px;
-  padding-right: 35px;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-position: left 0 top -66px;
+  background-color: $bg-dark;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: top -66px center;
   background-repeat: no-repeat;
 }
 
-.page-inner__description {
+.page-inner__title {
+  max-width: 250px;
+
   @include p-reset;
+  margin: 0 auto;
+  padding-top: 28px;
+}
+
+.page-inner__description {
+  max-width: 500px;
+
+  @include p-reset;
+  margin: 0 auto;
   padding-top: 45px;
-  padding-bottom: 50px;
-  padding-left: 35px;
-  padding-right: 35px;
+
+  &--stealth {
+    display: none;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-bg {
+    min-height: 330px;
+    //background-image: none; /*временно*/
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: top -110px center;
+    background-repeat: no-repeat;
+  }
+
+  .page-inner__title {
+    max-width: 500px;
+    padding-top: 70px;
+  }
+
+  .page-inner__description {
+    max-width: 500px;
+    padding-top: 90px;
+    padding-bottom: 75px;
+    //width: 100%; /*временно*/
+
+    &--stealth {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-bg {
+    min-height: 285px;
+    //background-image: none; /*временно*/
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: top -110px center;
+    background-repeat: no-repeat;
+  }
+
+  .page-inner__title {
+    max-width: 940px;
+    padding-top: 63px;
+  }
+
+  .page-inner__description {
+    max-width: 760px;
+    padding-top: 90px;
+    padding-bottom: 72px;
+  }
 }

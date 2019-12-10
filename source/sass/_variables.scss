@@ -1,10 +1,13 @@
 $bg-white: #ffffff;
 $bg-dark: #293646;
 $bg-lightgray: #f2f2f2;
+$green: #2aab6d;
+$green-hover: #1c9b5e;
 
 $color-dark: #293646;
-//$color-black: #283645;
 $color-white: #ffffff;
+$color-black: #000000;
+$color-lighwhite: rgba(255, 255, 255, 0.3);
 $color-pink: #d22856;
 $color-lightpink: rgba(210, 40, 86, 0.3);
 $color-gray: #e5e5e5;
@@ -13,8 +16,8 @@ $color-gray01: rgba(40, 50, 69, 0.1);
 $font-size: 14px;
 $line-height: 24px;
 
-$tablet-width: 768px;
-$desktop-width: 1440px;
-$mobil-width: 767px;
+$tablet-width: 660px;
+$desktop-width: 960px;
+$mobil-width: 320px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;

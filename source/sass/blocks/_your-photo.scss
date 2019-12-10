@@ -1,40 +1,142 @@
 .your-photo {
-  margin-bottom: 37px;
+  margin-bottom: 42px;
+  background-color: $bg-lightgray;
+}
+
+.your-photo__description-wrapper {
+  width: 100%;
+  background-color: $bg-white;
 }
 
 .your-photo__description {
+  width: 280px;
+
   @include p-reset;
+  margin: 0 auto;
   padding-top: 22px;
   padding-bottom: 40px;
-  padding-left: 30px;
-  padding-right: 35px;
 }
 
 .your-photo__wrapper {
   padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: $bg-lightgray;
   border-bottom: 1px solid $color-gray;
 }
 
+.your-photo__image {
+  width: 280px;
+  height: 374px;
+  margin: 0 auto;
+}
+
+.your-photo__img {
+  width: 280px;
+  height: auto;
+}
+
 .your-photo__tools {
-  padding-top: 35px;
+  padding-top: 40px;
 }
 
 .your-photo__buttons {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 38px;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 42px;
   padding-bottom: 30px;
-  background-color: $bg-lightgray;
 }
 
 .your-photo__button {
   background-color: transparent;
   border: 3px solid $color-pink;
   color: $color-pink;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .your-photo {
+    margin-bottom: 55px;
+  }
+
+  .your-photo__description {
+    width: 100%;
+    padding-top: 44px;
+    padding-bottom: 70px;
+  }
+
+  .your-photo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 774px;
+    margin: 0 auto;
+    padding-top: 57px;
+    padding-right: 13px;
+    border-bottom: 1px solid $color-gray;
+  }
+
+  .your-photo__image {
+    width: 300px;
+    height: 400px;
+    margin: 0;
+  }
+
+  .your-photo__img {
+    width: 300px;
+    height: auto;
+  }
+
+  .your-photo__tools {
+    padding-top: 10px;
+  }
+
+  .your-photo__buttons {
+    width: 100%;
+    padding-top: 42px;
+    padding-bottom: 30px;
+  }
+
+  .your-photo__button {
+    background-color: transparent;
+    border: 3px solid $color-pink;
+    color: $color-pink;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .your-photo {
+    margin-bottom: 95px;
+  }
+
+  .your-photo__wrapper {
+    max-width: 810px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    padding-right: 0;
+    padding-left: 15px;
+  }
+
+  .your-photo__tools {
+    padding-top: 0;
+  }
+
+  .your-photo__tools-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .your-photo__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 405px;
+    margin: 0;
+    margin-top: auto;
+    padding-bottom: 0;
+  }
+
+  .your-photo__button {
+    width: 185px;
+    margin-bottom: 0;
+  }
 }

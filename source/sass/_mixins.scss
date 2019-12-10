@@ -9,6 +9,12 @@
   padding: 0;
 }
 
+@mixin fildset-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 @mixin opensanslight {
   font-family: "Open-sans", "Arial", sans-serif;
   font-weight: 300;
@@ -30,4 +36,12 @@
 @mixin f-size ($font-size: 14px, $line-height: 24px) {
   font-size: $font-size;
   line-height: $line-height;
+}
+
+@mixin title-form {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  color: $color-pink;
+  text-transform: uppercase;
 }

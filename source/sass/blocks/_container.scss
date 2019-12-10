@@ -1,0 +1,26 @@
+.container {
+  margin: 0 auto; //центрирование
+  width: 100%;
+  min-width: 320px; //ограничивает минимальную ширину
+  max-width: 960px; // ограничивает максимальную ширину
+  padding-left: 20px;
+  padding-right: 20px;
+  //background-color: rgba(255, 255, 204, 0.5); /*временно*/
+
+  &--320 {
+    width: 320px;//ограничение ширины для мобильной формы
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container--320 {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

@@ -1,0 +1,126 @@
+.achievements {
+  @include fildset-reset;
+}
+
+.achievements__title {
+  width: 250px;
+  margin-bottom: 40px;
+  padding-top: 32px;
+}
+
+.achievements__item {
+  display: flex;
+  margin-bottom: 45px;
+
+  &:last-child {
+    margin-bottom: 42px;
+  }
+}
+
+.achievements__checkbox[type="checkbox"] {
+  display: none;
+}
+
+.achievements__label {
+  position: relative;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  padding-left: 68px;
+
+  @include f-size(18px, 30px);
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 37px;
+    height: 37px;
+    //background-color: $bg-white;
+    background-color: transparent; //временно
+    border: 1px solid $color-gray;
+    cursor: pointer;
+  }
+}
+
+.achievements__checkbox:checked + .achievements__label::after {
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 9px;
+  width: 22px;
+  height: 17px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .achievements {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 58px;
+    padding-bottom: 7px;
+    border: 2px solid $bg-lightgray;
+  }
+
+  .achievements__title {
+    width: 430px;
+    margin-bottom: 45px;
+    padding-top: 0;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .achievements__label {
+    padding-left: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .achievements {
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+
+  .achievements__title {
+    margin-bottom: 47px;
+  }
+
+  //.achievements__wrapper {
+  //  display: flex;
+  //  flex-wrap: wrap;
+  //}
+  //
+  //.achievements__item--1 {
+  //  order: 1;
+  //}
+  //
+  //.achievements__item--2 {
+  //  order: 2;
+  //}
+  //
+  //.achievements__item--3 {
+  //  order: 3;
+  //}
+  //
+  //.achievements__item--4 {
+  //  order: 4;
+  //}
+  //
+  //.achievements__item--5 {
+  //  order: 5;
+  //}
+  //
+  //.achievements__item--6 {
+  //  order: 6;
+  //}
+
+
+  .achievements__column {
+    column-width: 263px;
+    column-count: 3;
+    column-gap: 43px;
+    column-rule: none;
+  }
+}

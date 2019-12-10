@@ -1,0 +1,134 @@
+.form {
+  margin-top: 32px;
+  margin-bottom: 55px;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  width: 100%;
+
+  @include f-size(18px, 30px);
+  padding: 14px 20px 15px 20px;
+  border: 2px solid $color-gray;
+  background-color: transparent; //временно
+}
+
+.form__title {
+  @include title-form;
+  @include p-reset;
+  margin: 0 auto;
+  //margin-bottom: 40px;
+  //padding-top: 32px;
+  line-height: 18px;
+  text-align: center;
+
+  &--stealth { //заголовка то нет, то есть
+    display: none;
+  }
+}
+
+.form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  order: 5;
+}
+
+.form__note {
+  margin: 0 auto;
+  margin-top: 35px;
+  text-align: center;
+
+  @include f-size(14px, 30px);
+  text-transform: uppercase;
+}
+
+.form__note-stealth { //спана то нет, то есть
+  display: none;
+}
+
+.form__note-pink {
+  color: $color-pink;
+}
+
+.form__background {
+  background-color: $bg-lightgray;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &--app {
+    margin-bottom: 30px;
+    order: 4;
+  }
+
+  &--achievements {
+    margin-bottom: 30px;
+    order: 2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    margin-top: 0;
+    margin-bottom: 75px;
+  }
+
+  .form__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__title--stealth { //заголовка то нет, то есть
+    display: block;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .form__note {
+    margin: 0;
+    text-align: right;
+  }
+
+  .form__background {
+    width: 100%;
+    background-color: transparent;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+
+    &--app {
+      margin-bottom: 55px;
+      order: 2;
+    }
+
+    &--achievements {
+      margin-bottom: 51px;
+      order: 4;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    margin-bottom: 60px;
+  }
+
+  .form__note-stealth {
+    display: inline;
+  }
+
+  .form__background--app {
+    width: 435px;
+  }
+}

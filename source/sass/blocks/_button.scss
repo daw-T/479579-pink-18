@@ -1,8 +1,8 @@
 .button,
 a.button {
   display: block;
-  max-width: 280px;
-  padding: 18px 20px 15px 20px;
+  width: 280px;
+  padding: 16px 20px 15px 20px;
 
   @include opensansbold;
   font-size: 18px;
@@ -13,17 +13,71 @@ a.button {
   border: 3px solid $color-white;
   border-radius: 30px;
 
+  &--transparent {
+    background-color: transparent;
+  }
+
   &:hover,
   &:focus {
     color: $color-pink;
+    text-shadow: none;
+    background-color: $bg-white;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    text-shadow: none;
     background-color: $bg-white;
     outline: none;
     cursor: pointer;
   }
 }
 
-.disabled {
-  background-color: $bg-white;
-  color: $color-lightpink;
-  border-color: $color-gray01;
+.button--form,
+a.button--form {
+  width: 280px;
+  margin: 0 auto;
+  padding: 22px;
+  background-color: $green;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $color-white;
+    background-color: $green-hover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: $color-lighwhite;
+    background-color: $green-hover;
+    outline: none;
+    cursor: pointer;
+  }
 }
+
+@media (min-width: $tablet-width) {
+  .button--form,
+  a.button--form {
+    width: 300px;
+    margin: 0;
+  }
+}
+
+
+//@media (min-width: $desktop-width) {
+// padding: 13px 20px 15px 20px;
+//  }
+//}
+
+//.disabled {
+//  background-color: rgba(255, 255, 255, 0, 3);
+//  color: $color-lightpink;
+//  border-color: $color-gray01;
+//}
