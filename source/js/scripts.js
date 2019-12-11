@@ -4,12 +4,14 @@ if (false) {
 
 var navMain = document.querySelector(".main-nav");
 var button = document.querySelector(".page-header__toggle");
+var pageHeader = document.querySelector(".page-header");
 
 console.log(button);
 
 if (button.classList.contains('page-header__toggle--invisible')) {
   button.classList.remove('page-header__toggle--invisible');
   button.classList.add('page-header__toggle--opened');
+  pageHeader.classList.add('stealth');
 }
 if (navMain.classList.contains('main-nav--opened')) {
   navMain.classList.remove('main-nav--opened');
@@ -23,9 +25,11 @@ button.addEventListener('click', function () {
   if (button.classList.contains('page-header__toggle--closed')) {
     button.classList.remove('page-header__toggle--closed');
     button.classList.add('page-header__toggle--opened');
+    pageHeader.classList.add('stealth');
   } else {
     button.classList.remove('page-header__toggle--opened');
     button.classList.add('page-header__toggle--closed');
+    pageHeader.classList.remove('stealth');
   }
 
   if (navMain.classList.contains('main-nav--opened')) {
