@@ -1,27 +1,32 @@
 .contacts-info {
+  margin-bottom: 23px;
+  order: 3;
+}
+
+.contacts-info__fieldset {
   display: flex;
   flex-direction: column;
 
   @include fildset-reset;
-  margin-bottom: 25px;
-  order: 3;
+}
 
-  .contacts-info__contacts {
-    @include title-form;
-    padding-left: 20px;
-    margin-bottom: 7px;
-  }
+.contacts-info__contacts {
+  @include title-form;
+  padding-left: 20px;
+  margin-bottom: 7px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts-info {
-    width: 100%;
     margin-bottom: 57px;
+  }
+
+  .contacts-info__fieldset {
+    width: 100%;
     padding-right: 58px;
     padding-left: 60px;
     padding-bottom: 3px;
     border: 2px solid $bg-lightgray;
-    order: 3;
   }
 
   .contacts-info__title {

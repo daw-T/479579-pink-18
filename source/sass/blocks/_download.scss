@@ -1,16 +1,11 @@
 .download {
-  //position: relative;
+  margin-top: -70px;
+  padding-top: 70px;
   margin-bottom: 40px;
   background-color: $bg-dark;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-position: top 175px center, top;
   background-repeat: no-repeat;
-  //z-index: -1;
-}
-
-.download__wrapper {
-  margin-top: -70px;
-  padding-top: 70px;
 }
 
 .download__slogan {
