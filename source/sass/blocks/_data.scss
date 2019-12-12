@@ -1,17 +1,20 @@
 .data {
+  order: 1;
+}
+
+.data__fieldset {
   display: flex;
   flex-direction: column;
 
   @include fildset-reset;
-  margin-bottom: 30px;
-  order: 1;
+  margin-bottom: 32px;
 }
 
 .data__item {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 
   &:first-child {
     margin-top: 2px;
@@ -21,11 +24,11 @@
 .data__contacts {
   @include title-form;
   padding-left: 20px;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 @media (min-width: $tablet-width) {
-  .data {
+  .data__fieldset {
     width: 100%;
     margin-bottom: 0;
   }
@@ -54,10 +57,14 @@
 
 @media (min-width: $desktop-width) {
   .data {
+    width: 50%;
+  }
+
+  .data__fieldset {
     width: 435px;
     margin-top: 13px;
     margin-bottom: 3px;
-    margin-right: 70px;
+    margin-right: 40px;
   }
 
   .data__item {

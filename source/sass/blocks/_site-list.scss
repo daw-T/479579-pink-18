@@ -20,6 +20,20 @@
   line-height: 32px;
   color: $color-white;
   text-transform: uppercase;
+
+  &--active {
+    position: relative;
+  }
+
+  &--active::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 9px;
+    left: 0;
+    height: 2px;
+    background-color: $bg-white;
+  }
 }
 
 a[href].site-list__link {
@@ -29,8 +43,19 @@ a[href].site-list__link {
   }
 
   &:active {
+    position: relative;
     color: $color-white;
     opacity: 0.3;
+  }
+
+  &:active::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 9px;
+    left: 0;
+    height: 2px;
+    background-color: $bg-white;
   }
 }
 
@@ -40,6 +65,7 @@ a[href].site-list__link {
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 700px;
+    padding-right: 10px;
   }
 
   .site-list__item {
@@ -60,19 +86,5 @@ a[href].site-list__link {
     @include opensans;
     @include f-size(18px, 18px);
     text-transform: none;
-
-    &--active {
-      position: relative;
-    }
-
-    &--active::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 9px;
-      left: 0;
-      height: 2px;
-      background-color: $bg-white;
-    }
   }
 }

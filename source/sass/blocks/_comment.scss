@@ -1,4 +1,9 @@
 .comment {
+  margin-bottom: 55px;
+  order: 5;
+}
+
+.comment__fieldset {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -32,8 +37,12 @@
 
 @media (min-width: $tablet-width) {
   .comment {
+    margin-bottom: 70px;
+  }
+
+  .comment__fieldset {
     width: 100%;
-    margin-bottom: 67px;
+    //margin-bottom: 50px;
     padding-left: 60px;
     padding-right: 58px;
     padding-bottom: 53px;
@@ -43,7 +52,7 @@
   .comment__title {
     width: 255px;
     margin: 0 auto;
-    margin-top: -17px;
+    //margin-top: -17px;
     margin-bottom: 30px;
     padding-right: 25px;
     padding-left: 25px;
@@ -51,14 +60,28 @@
   }
 
   .comment__text {
-    padding: 13px 5px 55px 20px;
+    padding: 16px 5px 53px 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    margin-bottom: 70px;
+  }
+
+  .comment__fieldset {
+    margin-bottom: 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .comment {
-    margin-bottom: 65px;
+    margin-bottom: 60px;
+  }
+
+  .comment__fieldset {
     padding-bottom: 44px;
+    margin-bottom: 60px;
   }
 
   .comment__text {
