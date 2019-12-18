@@ -53,7 +53,8 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    margin-top: 0;
+    max-width: 960px;
+    margin: 0 auto;
   }
 
   .form__title--stealth { //заголовка то нет, то есть

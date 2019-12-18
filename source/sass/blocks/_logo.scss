@@ -1,11 +1,11 @@
-a[href].logo {
+.logo img {
   display: block;
   width: 75px;
   height: 22px;
 }
 
 @media (min-width: $tablet-width) {
-  a[href].logo {
+  .logo img {
     width: 146px;
     height: 40px;
   }

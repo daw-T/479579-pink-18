@@ -34,6 +34,12 @@
 
 .your-photo__tools {
   padding-top: 40px;
+  margin-bottom: 33px;
+}
+
+.your-photo__scales {
+  margin: 0 auto;
+  margin-bottom: 67px;
 }
 
 .your-photo__buttons {
@@ -65,8 +71,6 @@
 
   .your-photo__wrapper {
     display: flex;
-    justify-content: space-between;
-    max-width: 774px;
     margin: 0 auto;
     padding-top: 57px;
   }
@@ -75,20 +79,32 @@
     width: 300px;
     height: 400px;
     margin: 0;
+    object-fit: cover;
   }
 
   .your-photo__img {
     width: 300px;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .your-photo__tools-wrapper {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .your-photo__tools {
-    padding-top: 10px;
+    padding-top: 7px;
+    margin-bottom: 0;
+  }
+
+  .your-photo__scales {
+    margin: 0 auto;
   }
 
   .your-photo__buttons {
     width: 100%;
-    padding-top: 42px;
+    padding-top: 33px;
     padding-bottom: 60px;
   }
 
@@ -120,11 +136,6 @@
 
   .your-photo__tools {
     padding-top: 0;
-  }
-
-  .your-photo__tools-wrapper {
-    display: flex;
-    flex-direction: column;
   }
 
   .your-photo__buttons {

@@ -15,7 +15,7 @@
   <div class="container">
     <div class="page-header__wrapper">
       <div class="page-header__logo-wrapper">
-        <a class="logo">
+        <a href="index.html" class="logo">
           <picture>
             <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
@@ -56,11 +56,11 @@
   <section class="photo">
     <h2 class="visually-hidden">Фотографии с описаниями</h2>
     <div class="photo__panorama-wrarrer">
-      <div class="photo__panorama">
+      <div class="photo__panorama photo__panorama—label">
         <picture>
-          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
-          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-          <img class="photo__pic-panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Вид с вышки. Прыгать или нет?">
+          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+          <img class="photo__pic-panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Вид с вышки">
         </picture>
       </div>
       <div class="photo__description-panorama">
@@ -69,13 +69,12 @@
         <p class="photo__likes-panorama">Нравится: <span class="photo__number-likes">215</span></p>
       </div>
     </div>
-    <!--    <div class="container">-->
     <ul class="photo__list">
       <li class="photo__item">
         <div class="photo__image">
           <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
-            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+            <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg  2x">
+            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg  2x">
             <img class="photo__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото белой машины">
           </picture>
         </div>
@@ -88,8 +87,8 @@
       <li class="photo__item">
         <div class="photo__image">
           <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
-            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
             <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Ударная установка">
           </picture>
         </div>
@@ -102,8 +101,8 @@
       <li class="photo__item">
         <div class="photo__image">
           <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
-            <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+            <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
             <img class="photo__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Шикарная панорамная комната">
           </picture>
         </div>
@@ -116,8 +115,8 @@
       <li class="photo__item">
         <div class="photo__image">
           <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
-            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+            <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
             <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Торговая точка рядом с полем Кубанская бахча">
           </picture>
         </div>
@@ -130,8 +129,8 @@
       <li class="photo__item">
         <div class="photo__image">
           <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
-            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+            <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
             <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Ноги Царя горы, сидящего на вершине, и красивый вид с этой точки">
           </picture>
         </div>
@@ -144,8 +143,8 @@
       <li class="photo__item">
         <div class="photo__image">
           <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
-            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+            <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
             <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Самолет в небе">
           </picture>
         </div>
@@ -156,51 +155,62 @@
         </div>
       </li>
     </ul>
-    <!--    </div>-->
   </section>
   <section class="your-photo">
     <h2 class="visually-hidden">Выложи свое фото!</h2>
     <div class="your-photo__description-wrapper">
       <p class="your-photo__description section-description">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
     </div>
-    <div class="bg bg__light-color">
-      <div class="container">
-        <div class="your-photo__wrapper">
-          <div class="your-photo__image">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
-              <img class="your-photo__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Зимний пейзаж">
-            </picture>
+    <!--    <div class="bg bg__light-color">-->
+    <div class="container">
+      <div class="your-photo__wrapper">
+        <div class="your-photo__image">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="your-photo__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Зимний пейзаж">
+          </picture>
+        </div>
+        <div class="your-photo__tools-wrapper">
+          <div class="your-photo__tools tools">
+            <ul class="tools__list">
+              <li class="tools__item">
+                <label class="tools__item-crop" for="editor-crop">
+                  <img src="img/icon-editor-crop.svg" alt="Инструмент Обрезать фото" width="48" height="48">
+                </label>
+              <li class="tools__item">
+                <label class="tools__item-fill" for="editor-fill">
+                  <img src="img/icon-editor-fill.svg" alt="Инструмент Насыщенность" width="48" height="48">
+                </label>
+              </li>
+              <li class="tools__item">
+                <label class="tools__item-contrast" for="editor-contrast">
+                  <img src="img/icon-editor-contrast.svg" alt="Инструмент Яркость" width="32" height="32">
+                </label>
+              </li>
+            </ul>
           </div>
-          <div class="your-photo__tools-wrapper">
-            <div class="your-photo__tools tools">
-              <ul class="tools__list">
-                <li class="tools__item">
-                  <img class="tools__item-crop" src="img/icon-editor-crop.svg" alt="Инструмент Обрезать фото" width="48" height="48">
-                  <div class="your-photo__scale">
-                  </div>
-                </li>
-                <li class="tools__item">
-                  <img class="tools__item-fill" src="img/icon-editor-fill.svg" alt="Инструмент Насыщенность" width="48" height="48">
-                  <div class="your-photo__scale">
-                  </div>
-                </li>
-                <li class="tools__item">
-                  <img class="tools__item-contrast" src="img/icon-editor-contrast.svg" alt="Инструмент Яркость" width="32" height="32">
-                  <div class="your-photo__scale">
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="your-photo__buttons">
-              <button class="button your-photo__button" type="button">Запостить</button>
-              <button class="button your-photo__button disabled" type="button">Отмена</button>
-            </div>
+          <div class="your-photo__scales scales">
+            <ul class="scales__list">
+              <li>
+                <input class="scales__item scales__item--crop" type="range" min="0" max="100" step="1" name="crop" id="editor-crop">
+              </li>
+              <li>
+                <input class="scales__item scales__item--fill" type="range" min="0" max="100" step="1" name="fill" id="editor-fill">
+              </li>
+              <li>
+                <input class="scales__item scales__item--contrast" type="range" min="0" max="100" step="1" name="contrast" id="editor-contrast">
+              </li>
+            </ul>
+          </div>
+          <div class="your-photo__buttons">
+            <button class="button your-photo__button" type="button">Запостить</button>
+            <button class="button your-photo__button disabled" type="button">Отмена</button>
           </div>
         </div>
       </div>
     </div>
+    <!--    </div>-->
   </section>
 </main>
 
@@ -251,6 +261,6 @@
     </div>
   </div>
 </footer>
-<script src="js/scripts.js"></script>
+<!--<script src="js/scripts.js"></script>-->
 </body>
 </html>
