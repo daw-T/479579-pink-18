@@ -70,3 +70,9 @@
     display: block;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .scales {
+    width: 292px;
+  }
+}

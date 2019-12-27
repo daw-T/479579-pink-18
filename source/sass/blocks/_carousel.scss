@@ -1,0 +1,49 @@
+.carousel__indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include list-reset;
+}
+
+.carousel__toggle {
+  margin-right: 19px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.carousel__link {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border: none;
+  border-radius: 50%;
+  background-color: $bg-dark;
+  opacity: 0.3;
+
+  &--active {
+    width: 12px;
+    height: 12px;
+    background-color: $bg-white;
+    border: 3px solid $bg-dark;
+    opacity: 1;
+  }
+}
+
+a[href].carousel__link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .carousel {
+    display: none;
+  }
+}

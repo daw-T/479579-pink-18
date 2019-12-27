@@ -25,7 +25,7 @@
   &::after {
     content: "панорама дня";
     position: absolute;
-    left: 50%;
+    right: 20px;
     top: 0;
     width: 140px;
     height: 36px;
@@ -72,6 +72,8 @@
 .photo__title-panorama {
   display: block;
   font-weight: bold;
+
+  @include p-reset;
 }
 
 .photo__time-ago {
@@ -126,13 +128,12 @@
 
   .photo__panorama—label {
     &::after {
-      left: 70%;
       top: 58px;
     }
   }
 
   .photo__pic-panorama {
-    height: 509px;
+    height: 511px;
   }
 
   .photo__description {
@@ -201,16 +202,18 @@
 }
 
 @media (min-width: $desktop-width) {
-  .photo__pic-panorama {
-    width: 1200px;
-  }
-
   .photo__description-panorama {
     width: 940px;
   }
 
   .photo__title-panorama {
     width: 760px;
+  }
+
+  .photo__panorama—label {
+    &::after {
+      right: 130px;
+    }
   }
 
   .photo__list {

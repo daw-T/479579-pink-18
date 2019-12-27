@@ -49,7 +49,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    //border: 1px solid dodgerblue;
   }
 
   .page-footer__logo {
@@ -65,7 +64,7 @@
   .page-footer__copyright {
     width: 137px;
     margin-top: 8px;
-    margin-right: -5px;
+    margin-right: 0;
   }
 }
 
@@ -80,7 +79,7 @@
   }
 
   .page-footer__social {
-    margin-left: 10px;
+    margin-left: 5px;
   }
 
   .page-footer__copyright {
