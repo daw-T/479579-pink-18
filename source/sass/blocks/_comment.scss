@@ -37,12 +37,12 @@
 
 @media (min-width: $tablet-width) {
   .comment {
-    margin-bottom: 70px;
+    margin-bottom: 77px;
   }
 
   .comment__fieldset {
     width: 100%;
-    //margin-bottom: 50px;
+    margin-bottom: 68px;
     padding-left: 60px;
     padding-right: 58px;
     padding-bottom: 53px;
@@ -61,16 +61,6 @@
 
   .comment__text {
     padding: 16px 5px 53px 20px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .comment {
-    margin-bottom: 70px;
-  }
-
-  .comment__fieldset {
-    margin-bottom: 70px;
   }
 }
 

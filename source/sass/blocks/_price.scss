@@ -2,6 +2,10 @@
   position: relative;
   padding-top: 88px;
   background-color: $bg-lightgray;
+  background-image: url("/img/bg-triangle-white1.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .price__bevel {
@@ -187,13 +191,15 @@
   margin-right: 19px;
 
   &--yes {
-    background-image: url("/img/icon-yes.svg");
+    background-image: url("/img/icon-yes1.svg");
+    background-size: 31px 21px;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   &--no {
-    background-image: url("/img/icon-no.svg");
+    background-image: url("/img/icon-no1.svg");
+    background-size: 27px 26px;
     background-position: center;
     background-repeat: no-repeat;
   }

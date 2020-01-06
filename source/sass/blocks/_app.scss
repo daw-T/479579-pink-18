@@ -49,6 +49,14 @@
   }
 }
 
+.app__checkbox:hover + .app__label::before {
+  border: 2px solid $color-dark;
+}
+
+.app__checkbox:active + .app__label::before {
+  border: 2px solid $color-pink;
+}
+
 .app__checkbox:checked + .app__label::after {
   position: absolute;
   content: "";

@@ -14,7 +14,7 @@
   align-items: center;
   margin: 0 auto;
   padding-top: 20px;
-  padding-bottom: 28px;
+  padding-bottom: 25px;
 }
 
 .logo__image {
@@ -29,26 +29,32 @@
   background-color: transparent;
   border: 0;
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .page-header__toggle--invisible {
   display: none;
 }
 
-.page-header__toggle::before {
-  content: "";
-  height: 24px;
-  display: block;
-  background: $bg-dark url("../img/icon-menu-burger.svg") no-repeat 50% 50%;
-  background-size: 50px auto;
+.page-header__toggle--opened .page-header__toggle-cross {
+  display: none;
 }
 
-.page-header__toggle--closed.page-header__toggle::before {
-  content: "";
-  height: 24px;
-  display: block;
-  background: $bg-dark url("../img/icon-menu-cross.svg") no-repeat 50% 50%;
-  background-size: 25px auto;
+.page-header__toggle--closed .page-header__toggle-hambuger {
+  display: none;
+}
+
+.page-header__toggle--opened:active .page-header__toggle-hambuger {
+  fill: $color-pink;
+  fill-opacity: 0.3;
+}
+
+.page-header__toggle--closed:active .page-header__toggle-cross {
+  fill: $color-pink;
+  fill-opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

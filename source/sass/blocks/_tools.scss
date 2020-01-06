@@ -15,6 +15,16 @@
   @include list-reset;
 }
 
+.tools__fill {
+  fill: #283645;
+  opacity: 0.3;
+}
+
+.tools__contrast {
+  fill: #283645;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .tools {
     justify-content: flex-start;
@@ -26,7 +36,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    width: 25px;
+    width: 30px;
+    text-align: center;
     padding-bottom: 55px;
 
     &:last-child {
@@ -38,43 +49,47 @@
     margin-bottom: 43px;
   }
 
-  .tools__item-crop {
+  .tools__crop {
     width: 23px;
     height: 23px;
   }
 
-  .tools__item-fill {
+  .tools__fill {
     width: 25px;
     height: 22px;
+    fill: #d22856;
+    opacity: 1;
   }
 
-  .tools__item-contrast {
+  .tools__contrast {
     width: 16px;
     height: 16px;
+    fill: #d22856;
+    opacity: 1;
   }
 }
 
 @media (min-width: $desktop-width) {
   .tools__list {
-    width: 100%;
+    width: 50px;
     padding-bottom: 65px;
   }
 
   .tools__item {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
-  .tools__item-crop {
+  .tools__crop {
     width: 44px;
     height: 44px;
   }
 
-  .tools__item-fill {
+  .tools__fill {
     width: 48px;
     height: 43px;
   }
 
-  .tools__item-contrast {
+  .tools__contrast {
     width: 32px;
     height: 32px;
   }

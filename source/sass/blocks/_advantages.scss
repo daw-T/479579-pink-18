@@ -75,6 +75,7 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/iphone-screen-3-tablet@2x.png");
       background-size: 268px auto;
+      background-repeat: no-repeat;
     }
   }
 
@@ -91,11 +92,42 @@
   }
 
   .advantages__time {
+    position: relative;
     display: flex;
     margin-top: 0;
     margin-bottom: 50px;
     padding-top: 56px;
     padding-bottom: 27px;
+    background-image: url("/img/icon-timer1.svg");
+    background-size: 238px auto;
+    background-position: 3px 56px;
+    background-repeat: no-repeat;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 22px;
+      top: 114px;
+      width: 200px;
+      height: 200px;
+      background-image: url("/img/icon-editor-diagram-fill1.svg");
+      background-position: 0 0;
+      background-size: 200px 200px;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      left: 66px;
+      top: 132px;
+      width: 106px;
+      height: 70px;
+
+      @include f-size(96px, 149.5px);
+      font-weight: bold;
+      color: $color-pink;
+    }
   }
 
   .advantages__time-wrapper {
@@ -234,6 +266,26 @@
       margin-bottom: 17px;
       padding-top: 60px;
       padding-bottom: 110px;
+      background-size: 298px auto;
+      background-position: 0 64px;
+
+      &::before {
+        left: 25px;
+        top: 135px;
+        width: 250px;
+        height: 250px;
+        background-position: 0 0;
+        background-size: 250px 250px;
+      }
+
+      &::after {
+        left: 79px;
+        top: 158px;
+        width: 131px;
+        height: 87px;
+
+        @include f-size(120px, 187px);
+      }
     }
 
     .advantages__time-wrapper {

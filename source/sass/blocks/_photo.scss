@@ -1,5 +1,5 @@
 .photo {
-  margin-top: 48px;
+  margin-top: 50px;
 }
 
 .photo__panorama-wrarrer {
@@ -45,8 +45,8 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
-  padding: 17px 5px 22px 17px;
-  background-color: $bg-lightgray;
+  padding: 19px 5px 20px 17px;
+  //background-color: $bg-lightgray;
 }
 
 .photo__list {
@@ -89,28 +89,36 @@
   padding-bottom: 8px;
 }
 
-.photo__likes,
+.photo__likes-usual,
 .photo__likes-panorama {
-  position: relative;
   display: flex;
+}
 
+.photo__likes-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.photo__likes-heart {
+  display: block;
+  margin-top: 6px;
+  width: 13px;
+  height: 12px;
+}
+
+.photo__likes,
+.photo__likes-pan {
   @include p-reset;
-  padding-left: 33px;
-  color: $color-pink;
+  margin-left: 20px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 12px;
-    height: 12px;
-    //padding: 7px 19px 10px 19px;
-  }
+  @include f-size(12px, 24px);
+  color: $color-pink;
+  text-transform: uppercase;
 }
 
 .photo__number-likes {
-  padding-left: 2px;
+  padding-left: 1px;
 }
 
 @media (min-width: $tablet-width) {
@@ -148,7 +156,7 @@
     flex-wrap: wrap;
     width: 620px;
     margin: 0 auto;
-    padding: 23px 30px 17px 25px;
+    padding: 25px 30px 15px 25px;
   }
 
   .photo__title-panorama {
@@ -161,8 +169,9 @@
   }
 
   .photo__likes-panorama {
-    width: 105px;
-    padding-right: 15px;
+    justify-content: space-between;
+    width: 120px;
+    padding-right: 0;
     padding-left: 0;
     order: 2;
   }
@@ -193,10 +202,21 @@
     height: auto;
   }
 
-  .photo__likes {
+  .photo__likes-heart {
+    order: 2;
+  }
+
+  .photo__likes,
+  .photo__likes-pan {
+    margin-left: 0;
+    order: 1;
+  }
+
+  .photo__likes-usual {
+    justify-content: space-between;
     width: 100%;
     padding-left: 0;
-    padding-right: 155px;
+    padding-right: 17px;
     margin-top: auto;
   }
 }
@@ -204,6 +224,7 @@
 @media (min-width: $desktop-width) {
   .photo__description-panorama {
     width: 940px;
+    padding: 23px 30px 17px 25px;
   }
 
   .photo__title-panorama {
@@ -216,6 +237,10 @@
     }
   }
 
+  .photo__description {
+    padding: 21px 15px 23px 26px;
+  }
+
   .photo__list {
     width: 940px;
   }
@@ -223,7 +248,7 @@
   .photo__item {
     width: 300px;
     margin-right: 20px;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
 
     &:nth-child(2n) {
       margin-right: 20px;
@@ -232,6 +257,15 @@
     &:nth-child(3n) {
       margin-right: 0;
     }
+  }
+
+  .photo__text {
+    padding-bottom: 0;
+  }
+
+  .photo__likes-usual,
+  .photo__likes-panorama {
+    display: flex;
   }
 
   .photo__image {

@@ -8,12 +8,40 @@
 }
 
 .form__input {
+  position: relative;
   width: 100%;
 
   @include f-size(18px, 30px);
   padding: 14px 20px 15px 20px;
   border: 2px solid $color-gray;
   background-color: transparent; //временно
+
+  &:hover {
+    border: 2px solid $color-dark;
+  }
+
+  &:focus {
+    border: 2px solid $color-dark;
+  }
+
+  &:active {
+    border: 2px solid $color-pink;
+  }
+}
+
+.form__input--phone {
+  padding-right: 60px;
+  order: 1;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $color-gray;
+  }
 }
 
 .form__title {

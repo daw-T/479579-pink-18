@@ -10,12 +10,17 @@
 .achievements__title {
   width: 250px;
   margin-bottom: 40px;
-  padding-top: 34px;
+  padding-top: 36px;
+}
+
+.achievements__columns {
+  display: flex;
+  flex-direction: column;
 }
 
 .achievements__item {
   display: flex;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
 
   &:first-child {
     order: 1;
@@ -72,6 +77,14 @@
   }
 }
 
+.achievements__checkbox:hover + .achievements__label::before {
+  border: 1px solid $color-dark;
+}
+
+.achievements__checkbox:active + .achievements__label::before {
+  border: 1px solid $color-pink;
+}
+
 .achievements__checkbox:checked + .achievements__label::after {
   position: absolute;
   content: "";
@@ -79,7 +92,8 @@
   left: 9px;
   width: 22px;
   height: 17px;
-  background-image: url("../img/icon-yes.svg");
+  background-image: url("/img/icon-yes2.svg");
+  background-size: 22px 17px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -107,7 +121,7 @@
   }
 
   .achievements__item {
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
   .achievements__label {
@@ -125,6 +139,7 @@
   .achievements__fieldset {
     padding-left: 57px;
     padding-right: 45px;
+    padding-bottom: 11px;
   }
 
   .achievements__title {
@@ -133,6 +148,7 @@
 
   .achievements__columns {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 

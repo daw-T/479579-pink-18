@@ -25,7 +25,7 @@
     width: 100%;
     padding-right: 58px;
     padding-left: 60px;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
     border: 2px solid $bg-lightgray;
   }
 
@@ -53,10 +53,23 @@
     order: 2;
   }
 
-  .contacts-info__input {
-    padding-right: 60px;
-    order: 1;
-  }
+  //.contacts-info__input {
+  //  position: relative;
+  //  padding-right: 60px;
+  //  order: 1;
+  //}
+  //
+  //.contacts-info__input--phone {
+  //  &::before {
+  //    position: absolute;
+  //    content: "";
+  //    top: 0;
+  //    right: 0;
+  //    width: 60px;
+  //    height: 60px;
+  //    background-color: $color-gray;
+  //  }
+  //}
 }
 
 @media (min-width: $desktop-width) {

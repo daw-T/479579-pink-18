@@ -39,6 +39,7 @@
     "node": "8.16"
   },
   "dependencies": {
-    "normalize.scss": "^0.1.0"
+    "normalize.scss": "^0.1.0",
+    "svg4everybody": "^2.1.9"
   }
 }

@@ -24,6 +24,12 @@
         </a>
         <button class="page-header__toggle page-header__toggle--invisible" type="button">
           <span class="visually-hidden">Открыть меню</span>
+          <svg class="page-header__toggle-hambuger" width="50" height="24">
+            <use xlink:href="svg/sprite.svg#hambuger"></use>
+          </svg>
+          <svg class="page-header__toggle-cross" width="24" height="24">
+            <use xlink:href="svg/sprite.svg#icon-menu-cross"></use>
+          </svg>
         </button>
       </div>
       <nav class="main-nav main-nav--opened">
@@ -72,7 +78,7 @@
           </div>
         </fieldset>
       </div>
-<div class="bg bg__transparent app">
+      <div class="bg bg__light-color app">
         <div class="container">
           <fieldset class="app__fieldset">
             <legend class="form__title app__title">С каким приложением путешествовали?</legend>
@@ -94,7 +100,7 @@
         </div>
       </div>
 
-      <div class="bg bg__transparent achievements">
+      <div class="bg bg__light-color achievements">
         <div class="container">
           <fieldset class="achievements__fieldset">
             <legend class="achievements__title form__title">Ваши безбашенные достижения в путешествии</legend>
@@ -134,11 +140,11 @@
           <div class="contacts-info__wrapper">
             <div class="data__item contacts-info__item">
               <label class="contacts-info__contacts" for="form__phone">Номер телефона</label>
-              <input class="form__input contacts-info__input" id="form__phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              <input class="form__input form__input--phone" id="form__phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
             </div>
             <div class="data__item contacts-info__item">
               <label class="data__contacts contacts-info__contacts" for="form__mail">Адрес почты</label>
-              <input class="form__input contacts-info__input" id="form__mail" type="email" name="mail" required placeholder="Введите почту*">
+              <input class="form__input form__input--address" id="form__mail" type="email" name="mail" required placeholder="Введите почту*">
             </div>
           </div>
         </fieldset>
@@ -160,7 +166,7 @@
   </section>
 </main>
 
-<footer class="page-footer page-footer__index">
+<footer class="page-footer page-footer">
   <div class="container">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="index.html">
@@ -172,21 +178,21 @@
           <li class="social__item">
             <a class="social__link" href="https://twitter.com/htmlacademy">
               <svg class="social__link-twitter" width="18" height="15">
-                <use xlink:href="#icon-twitter"></use>
+                <use xlink:href="svg/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://facebook.com/htmlacademy">
               <svg class="social__link-facebook" width="9" height="19">
-                <use xlink:href="#icon-facebook"></use>
+                <use xlink:href="svg/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.youtube.com/htmlacademy">
               <svg class="social__link-youtube" width="15" height="14">
-                <use xlink:href="#icon-youtube"></use>
+                <use xlink:href="svg/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
@@ -195,14 +201,35 @@
       <div class="page-footer__copyright">
         <p class="page-footer__copyright-text">Разработано</p>
         <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="27" height="34">
-            <use xlink:href="#logo2-html-academy"></use>
+          <svg class="page-footer__logo-academy" width="27" height="34">
+            <use xlink:href="svg/sprite.svg#logo2-html-academy"></use>
           </svg>
         </a>
       </div>
     </div>
   </div>
 </footer>
-<!--<script src="js/scripts.js"></script>-->
+
+<section class="modal modal__data">
+  <h2 class="modal__title modal__title--data">Что-то пошло не так!</h2>
+  <p class="modal__description modal__description--data">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  <button class="modal__close button button--form  button--data" type="button" aria-label="Выход из модального окна">Ок</button>
+</section>
+
+<section class="modal modal__sent">
+  <h2 class="modal__title modal__title--sent">Ваша заявка отправлена</h2>
+  <p class="modal__description modal__description--sent">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>
+  <div class="bg bg__light-color modal__bg">
+    <button class="modal__close button button--form  button--sent" type="button" aria-label="Выход из модального окна">Закрыть окно</button>
+  </div>
+</section>
+
+<div class="overlay"></div>
+
+<script src="js/scripts.js"></script>
+<script src="js/scripts-form.js"></script>
+<script src="js/svg4everybody.min.js"></script>
+<script>svg4everybody();</script>
+
 </body>
 </html>

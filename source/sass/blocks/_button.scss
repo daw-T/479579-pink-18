@@ -62,11 +62,39 @@ a.button--form {
   }
 }
 
+.button--data {
+  width: 276px;
+  margin: 0 auto;
+  padding: 15px;
+
+  @include f-size(18px, 30px);
+  font-weight: bold;
+}
+
+.button--sent {
+  width: 276px;
+  margin: 0 auto;
+  padding: 15px;
+
+  @include f-size(18px, 30px);
+  font-weight: bold;
+}
+
 @media (min-width: $tablet-width) {
   .button--form,
   a.button--form {
     width: 300px;
     margin: 0;
+  }
+
+  .button--data {
+    width: 296px;
+    margin: 0 auto;
+  }
+
+  .button--sent {
+    width: 296px;
+    margin: 0 auto;
   }
 }
 
