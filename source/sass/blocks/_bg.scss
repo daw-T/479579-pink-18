@@ -22,6 +22,10 @@
   background-color: $bg-lightgray;
 }
 
+.bg__color-form{
+  background-color: $bg-lightgray;
+}
+
 @media (min-width: $tablet-width) {
   .bg__pic {
     min-height: 440px;
@@ -36,7 +40,7 @@
     }
   }
 
-  .bg__light-color {
+  .bg__color-form {
     background-color: transparent;
   }
 
