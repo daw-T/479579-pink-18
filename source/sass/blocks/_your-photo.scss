@@ -58,6 +58,27 @@
   margin-bottom: 10px;
 }
 
+.your-photo__button--cancel,
+a.your-photo__button--cancel {
+  color: $color-dark;
+  background-color: $color-white;
+  border: 3px solid $color-dark;
+  opacity: 0.1;
+
+  &:hover,
+  &:focus {
+    color: $color-dark;
+    background-color: $color-white;
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: $color-dark;
+    color: $color-white;
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .your-photo {
     margin-bottom: 23px;
@@ -132,6 +153,35 @@
     border: 3px solid $color-pink;
     color: $color-pink;
     margin-bottom: 10px;
+
+    &:hover {
+      background-color: $color-pink;
+      color: $color-white;
+    }
+
+    &:active {
+      background-color: $color-pink;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .your-photo__button--cancel {
+    color: $color-dark;
+    background-color: $color-white;
+    border: 3px solid $color-dark;
+    opacity: 0.1;
+
+    &:hover {
+      color: $color-dark;
+      background-color: $color-white;
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: $color-white;
+      background-color: $color-dark;
+      opacity: 0.3;
+    }
   }
 }
 

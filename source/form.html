@@ -16,11 +16,15 @@
     <div class="page-header__wrapper">
       <div class="page-header__logo-wrapper">
         <a href="index.html" class="logo">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения Pink">
-          </picture>
+          <svg class="logo__mobile" width="74" height="23">
+            <use xlink:href="svg/sprite.svg#logo__mobile"></use>
+          </svg>
+          <svg class="logo__tablet" width="146" height="40">
+            <use xlink:href="svg/sprite.svg#logo__tablet"></use>
+          </svg>
+          <svg class="logo__desctop" width="146" height="40">
+            <use xlink:href="svg/sprite.svg#logo__desctop"></use>
+          </svg>
         </a>
         <button class="page-header__toggle page-header__toggle--invisible" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -169,8 +173,13 @@
 <footer class="page-footer page-footer">
   <div class="container">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-desktop.svg" alt="Логотип Pink с розовыми очками" width="146" height="40">
+      <a class="page-footer__logo logo__footer" href="index.html">
+        <svg class="logo__blue-mobile" width="146" height="40">
+          <use xlink:href="svg/sprite.svg#logo__blue-mobile"></use>
+        </svg>
+        <svg class="logo__blue-desktop" width="146" height="40">
+          <use xlink:href="svg/sprite.svg#logo__blue-desktop"></use>
+        </svg>
       </a>
       <div class="page-footer__social social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>

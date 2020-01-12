@@ -66,6 +66,19 @@
     margin-top: 8px;
     margin-right: 0;
   }
+
+  .page-footer__logo-academy {
+    fill: $color-pink;
+  }
+
+  .page-footer__copyright-logo:hover .page-footer__logo-academy {
+    fill: $color-dark;
+  }
+
+  .page-footer__copyright-logo:active .page-footer__logo-academy {
+    fill: $color-dark;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $desktop-width) {

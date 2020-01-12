@@ -95,6 +95,7 @@
 }
 
 .photo__likes-button {
+  padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -102,7 +103,6 @@
 
 .photo__likes-heart {
   display: block;
-  margin-top: 6px;
   width: 13px;
   height: 12px;
 }
@@ -202,7 +202,7 @@
     height: auto;
   }
 
-  .photo__likes-heart {
+  .photo__likes-button {
     order: 2;
   }
 

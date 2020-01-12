@@ -14,7 +14,7 @@
   align-items: center;
   margin: 0 auto;
   padding-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 19px;
 }
 
 .logo__image {
@@ -47,13 +47,29 @@
   display: none;
 }
 
-.page-header__toggle--opened:active .page-header__toggle-hambuger {
+.page-header__toggle .page-header__toggle-hambuger {
+  fill: $color-white;
+}
+
+.page-header__toggle--closed .page-header__toggle-cross {
+  fill: $color-white;
+}
+
+.page-header__toggle:hover .page-header__toggle-hambuger {
   fill: $color-pink;
+  fill-opacity: 1;
+}
+
+.page-header__toggle--closed:hover .page-header__toggle-cross {
+  fill: $color-pink;
+  fill-opacity: 1;
+}
+
+.page-header__toggle:active .page-header__toggle-hambuger {
   fill-opacity: 0.3;
 }
 
 .page-header__toggle--closed:active .page-header__toggle-cross {
-  fill: $color-pink;
   fill-opacity: 0.3;
 }
 

@@ -29,11 +29,6 @@
   @include f-size(14px, 30px);
 }
 
-.carousel__prev,
-.carousel__next {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .reviews {
     margin-bottom: 25px;
@@ -99,35 +94,11 @@
   }
 
   .reviews__wrapper {
-    position: relative;
-    padding-left: 30px;
-    padding-right: 30px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 30px;
-      width: 22px;
-      height: 42px;
-      background-image: url("/img/icon-review-arrow-left.svg");
-      background-position: top;
-      background-repeat: no-repeat;
-      opacity: 0.1;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 30px;
-      width: 22px;
-      height: 42px;
-      background-image: url("/img/icon-review-arrow-right.svg");
-      background-position: top;
-      background-repeat: no-repeat;
-      opacity: 0.1;
-    }
+    display: flex;
+    justify-content: space-between;
+    //position: relative;
+    //padding-left: 30px;
+    //padding-right: 30px;
   }
 
   .reviews__autor {

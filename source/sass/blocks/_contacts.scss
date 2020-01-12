@@ -64,25 +64,15 @@
 
 .contacts__map-wripper {
   position: relative;
-  background-image: url("/img/bg-triangle-white-footer.svg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: top;
-  z-index: 10;
 }
 
-//  &::before {
-//    position: absolute;
-//    content: "";
-//    top: 50%;
-//    left: 50%;
-//    width: 36px;
-//    height: 36px;
-//    background-color: $color-pink;
-//    border: 10px solid $color-white;
-//    border-radius: 50%;
-//    cursor: pointer;
-//  }
+.contacts__triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: $color-white;
+  z-index: 10;
+}
 
 .contacts__map {
   display: flex;

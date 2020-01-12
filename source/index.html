@@ -17,11 +17,15 @@
     <div class="page-header__wrapper">
       <div class="page-header__logo-wrapper">
         <a class="logo">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения Pink">
-          </picture>
+          <svg class="logo__mobile" width="74" height="23">
+            <use xlink:href="svg/sprite.svg#logo__mobile"></use>
+          </svg>
+          <svg class="logo__tablet" width="146" height="40">
+            <use xlink:href="svg/sprite.svg#logo__tablet"></use>
+          </svg>
+          <svg class="logo__desctop" width="146" height="40">
+            <use xlink:href="svg/sprite.svg#logo__desctop"></use>
+          </svg>
         </a>
         <button class="page-header__toggle page-header__toggle--invisible" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -83,7 +87,10 @@
       <p class="advantages__slogan  slogan slogan--darkcolor">Устали от серости мегаполиса?</p>
       <p class="advantages__slogan slogan slogan--darkcolor">Нам есть, что вам <br>предложить!</p>
     </div>
-    <div class="bg bg__light-color">
+    <div class="bg bg__light-color advantages__bg-coner">
+      <svg class="advantages__coner" width="100%">
+        <use xlink:href="svg/sprite.svg#bg-coner"></use>
+      </svg>
       <div class="container">
         <div class="advantages__wrapper">
           <ul class="advantages__list">
@@ -123,20 +130,24 @@
     <div class="container">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
       <div class="reviews__wrapper">
+        <a class="carousel__prev" href="" role="button" aria-label="Предыдущая страница">
+          <svg class="carousel__next-icon" width="22" height="42">
+            <use xlink:href="svg/sprite.svg#icon-review-arrow-right"></use>
+          </svg>
+        </a>
         <ul class="reviews__list">
           <li class="reviews__item reviews__item--active">
             <p class="reviews__autor">Николай Петров<span class="reviews__autor-add">25 лет, водитель трамвая</span></p>
             <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           </li>
         </ul>
+        <a class="carousel__next" href="" role="button" aria-label="Следующая страница">
+          <svg class="carousel__next-icon" width="22" height="42">
+            <use xlink:href="svg/sprite.svg#icon-review-arrow-left"></use>
+          </svg>
+        </a>
       </div>
     </div>
-    <a class="carousel__prev" href="" role="button">
-      <span class="carousel_prev-icon" aria-label="Предыдущая страница"></span>
-    </a>
-    <a class="carousel__next" href="" role="button">
-      <span class="carousel__next-icon" aria-label="Следующая страница"></span>
-    </a>
     <div class="reviews__carousel carousel">
       <ol class="carousel__indicators">
         <li class="carousel__toggle" aria-label="Первый слайд"><a class="carousel__link carousel__link--active"></a></li>
@@ -147,45 +158,99 @@
   </section>
 
   <section class="price">
+    <svg class="advantages__coner" width="100%">
+      <use xlink:href="svg/sprite.svg#bg-coner"></use>
+    </svg>
     <div class="container">
       <h2 class="visually-hidden">Тарифы</h2>
       <div class="price__wrapper">
-        <div class="price__wrapper">
-          <table class="price__table">
-            <tbody>
-            <tr class="price__tr">
-              <th class="price__th"></th>
-              <th class="price__th">База <span class="price__th-span">1,99&nbsp;USD</span></th>
-              <th class="price__th price__th--hit">Стандарт <span class="price__th-span">3,99&nbsp;USD</span></th>
-              <th class="price__th">Анлим <span class="price__th-span">9,99&nbsp;USD</span></th>
-            </tr>
-            <tr class="price__tr">
-              <td class="price__td price__description-td">Розовый&nbsp;фильтр</td>
-              <td class="price__td price__td--rose"><span class="price__tick-td price__tick-td--yes" aria-label="доступно"></span></td>
-              <td class="price__td price__td--rose"><span class="price__tick-td price__tick-td--yes" aria-label="доступно"></span></td>
-              <td class="price__td price__td--rose"><span class="price__tick-td price__tick-td--yes" aria-label="доступно"></span></td>
-            </tr>
-            <tr class="price__tr">
-              <td class="price__td price__description-td">Смайлики</td>
-              <td class="price__td price__td--smile"><span class="price__tick-td price__tick-td--no" aria-label="не доступно"></span></td>
-              <td class="price__td price__td--smile"><span class="price__tick-td price__tick-td--yes" aria-label="доступно"></span></td>
-              <td class="price__td price__td--smile"><span class="price__tick-td price__tick-td--yes" aria-label="доступно"></span></td>
-            </tr>
-            <tr class="price__tr">
-              <td class="price__td price__description-td">Комментарии</td>
-              <td class="price__td price__td--comment"><span class="price__tick-td price__tick-td--no" aria-label="не доступно"></span></td>
-              <td class="price__td price__td--comment"><span class="price__tick-td price__tick-td--no" aria-label="не доступно"></span></td>
-              <td class="price__td price__td--comment"><span class="price__tick-td price__tick-td--yes" aria-label="доступно"></span></td>
-            </tr>
-            </tbody>
-          </table>
-          <div class="price__carousel carousel">
-            <ol class="carousel__indicators">
-              <li class="carousel__toggle" aria-label="Первый слайд"><a class="carousel__link"></a></li>
-              <li class="carousel__toggle" aria-label="Второй слайд"><a href="" class="carousel__link  carousel__link--active"></a></li>
-              <li class="carousel__toggle" aria-label="Третий слайд"><a href="" class="carousel__link"></a></li>
-            </ol>
-          </div>
+        <table class="price__table">
+          <tbody>
+          <tr class="price__tr">
+            <th class="price__th"></th>
+            <th class="price__th">База <span class="price__th-span">1,99&nbsp;USD</span></th>
+            <th class="price__th price__th--hit">Стандарт <span class="price__th-span">3,99&nbsp;USD</span></th>
+            <th class="price__th">Анлим <span class="price__th-span">9,99&nbsp;USD</span></th>
+          </tr>
+          <tr class="price__tr">
+            <td class="price__td price__description-td">Розовый&nbsp;фильтр</td>
+            <td class="price__td price__td--rose">
+                <span class="price__tick-td" aria-label="опция доступна">
+                  <svg class="price__tick-yes" width="22" height="16">
+                    <use xlink:href="svg/sprite.svg#icon-yes"></use>
+                  </svg>
+                </span>
+            </td>
+            <td class="price__td price__td--rose">
+                <span class="price__tick-td" aria-label="опция доступна">
+                  <svg class="price__tick-yes" width="22" height="16">
+                    <use xlink:href="svg/sprite.svg#icon-yes"></use>
+                  </svg>
+                </span>
+            </td>
+            <td class="price__td price__td--rose">
+                <span class="price__tick-td" aria-label="опция доступна">
+                  <svg class="price__tick-yes" width="22" height="16">
+                    <use xlink:href="svg/sprite.svg#icon-yes"></use>
+                  </svg>
+                </span>
+            </td>
+          </tr>
+          <tr class="price__tr">
+            <td class="price__td price__description-td">Смайлики</td>
+            <td class="price__td price__td--smile">
+                <span class="price__tick-td" aria-label="опция не доступна">
+                  <svg class="price__tick-no" width="27" height="27">
+                    <use xlink:href="svg/sprite.svg#icon-no"></use>
+                  </svg>
+                </span>
+            </td>
+            <td class="price__td price__td--smile">
+                <span class="price__tick-td" aria-label="опция доступна">
+                  <svg class="price__tick-yes" width="22" height="16">
+                    <use xlink:href="svg/sprite.svg#icon-yes"></use>
+                  </svg>
+                </span>
+            </td>
+            <td class="price__td price__td--smile">
+                <span class="price__tick-td" aria-label="опция доступна">
+                  <svg class="price__tick-yes" width="22" height="16">
+                    <use xlink:href="svg/sprite.svg#icon-yes"></use>
+                  </svg>
+                </span>
+            </td>
+          </tr>
+          <tr class="price__tr">
+            <td class="price__td price__description-td">Комментарии</td>
+            <td class="price__td price__td--comment">
+                <span class="price__tick-td" aria-label="опция не доступна">
+                  <svg class="price__tick-no" width="27" height="27">
+                    <use xlink:href="svg/sprite.svg#icon-no"></use>
+                  </svg>
+                </span>
+            <td class="price__td price__td--comment">
+              <span class="price__tick-td" aria-label="опция не доступна">
+                  <svg class="price__tick-no" width="27" height="27">
+                    <use xlink:href="svg/sprite.svg#icon-no"></use>
+                  </svg>
+                </span>
+            </td>
+            <td class="price__td price__td--comment">
+                <span class="price__tick-td" aria-label="опция доступна">
+                  <svg class="price__tick-yes" width="22" height="16">
+                    <use xlink:href="svg/sprite.svg#icon-yes"></use>
+                  </svg>
+                </span>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="price__carousel carousel">
+          <ol class="carousel__indicators">
+            <li class="carousel__toggle" aria-label="Первый слайд"><a class="carousel__link"></a></li>
+            <li class="carousel__toggle" aria-label="Второй слайд"><a href="" class="carousel__link  carousel__link--active"></a></li>
+            <li class="carousel__toggle" aria-label="Третий слайд"><a href="" class="carousel__link"></a></li>
+          </ol>
         </div>
       </div>
     </div>
@@ -210,15 +275,22 @@
       </ul>
     </div>
     <section class="contacts__map-wripper">
-        <picture>
-          <source media="(min-width: 960px)" srcset="/img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-          <img class="contacts__map" src="/img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="200" alt="Карта">
-        </picture>
+      <svg class="contacts__triangle" width="100%">
+        <use xlink:href="svg/sprite.svg#bg-triangle"></use>
+      </svg>
+      <picture>
+        <source type="image/webp" media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/bg-map-mobile@1x.webp" srcset="img/bg-map-mobile@2x.webp 2x">
+
+        <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+        <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="200" alt="Карта">
+      </picture>
       <section class="modal modal__map">
         <h2 class="visually-hidden">Интерактивная карта</h2>
         <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056723!2d30.32085335169552!3d59.93871916896521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573738999471!5m2!1sru!2sru" width="660" height="200" style="border: 0;" allowfullscreen=""></iframe>
-        </section>
+      </section>
     </section>
   </section>
 </main>
@@ -226,8 +298,13 @@
 <footer class="page-footer page-footer__index">
   <div class="container">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-desktop.svg" alt="Логотип Pink с розовыми очками" width="146" height="40">
+      <a class="page-footer__logo logo__footer" href="index.html">
+        <svg class="logo__blue-mobile" width="146" height="40">
+          <use xlink:href="svg/sprite.svg#logo__blue-mobile"></use>
+        </svg>
+        <svg class="logo__blue-desktop" width="146" height="40">
+          <use xlink:href="svg/sprite.svg#logo__blue-desktop"></use>
+        </svg>
       </a>
       <div class="page-footer__social social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>

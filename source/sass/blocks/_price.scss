@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 88px;
   background-color: $bg-lightgray;
-  background-image: url("/img/bg-triangle-white1.svg");
+  background-image: url("img/bg-triangle-white1.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -185,24 +185,24 @@
 }
 
 .price__tick-td {
-  display: flex;
+  display: block;
   width: 31px;
   height: 31px;
-  margin-right: 19px;
+  margin-right: 16px;
+  text-align: center;
+}
 
-  &--yes {
-    background-image: url("/img/icon-yes1.svg");
-    background-size: 31px 21px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+.price__tick-yes {
+  width: 31px;
+  height: 21px;
+  margin-top: 7px;
+  fill: #3dc644;
+}
 
-  &--no {
-    background-image: url("/img/icon-no1.svg");
-    background-size: 27px 26px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+.price__tick-no {
+  width: 27px;
+  height: 27px;
+  fill: #f25b26;
 }
 
 .price__carousel {
@@ -313,6 +313,16 @@
     width: 31px;
     height: 31px;
     margin: 0 auto;
+  }
+
+  .price__tick-yes {
+    margin-top: 5px;
+  }
+
+  .price__tick-no {
+    width: 27px;
+    height: 27px;
+    fill: #f25b26;
   }
 
   .price__carousel {
