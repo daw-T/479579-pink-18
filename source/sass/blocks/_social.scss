@@ -13,24 +13,40 @@
   height: 48px;
   border: 3px solid $color-gray01;
   border-radius: 50%;
+
+  &:hover {
+    border: 3px solid $color-dark;
+  }
+
+  &:active {
+    border: 3px solid rgba(41, 54, 70, 0.1);
+  }
 }
 
 .social__link {
   display: flex;
+  width: 48px;
+  height: 48px;
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}
+
+.social__link-twitter {
+  width: 18px;
+  height: 15px;
   margin: auto;
+}
 
-  &--twitter {
-    width: 17px;
-    height: 15px;
-  }
+.social__link-facebook {
+  width: 9px;
+  height: 19px;
+  margin: auto;
+}
 
-  &--facebook {
-    width: 9px;
-    height: 19px;
-  }
-
-  &--youtube {
-    width: 15px;
-    height: 14px;
-  }
+.social__link-youtube {
+  width: 15px;
+  height: 14px;
+  margin: auto;
 }

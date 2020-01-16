@@ -1,8 +1,15 @@
 .reviews {
-  margin-bottom: 10px;
+  margin-bottom: 45px;
+}
+
+.reviews__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .reviews__list {
+  @include list-reset;
   text-align: center;
 }
 
@@ -23,18 +30,21 @@
 
   @include p-reset;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 32px;
 
   @include f-size(14px, 30px);
 }
 
-.reviews__toggles {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
+.reviews__prev,
+.reviews__next {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    margin-bottom: 25px;
+  }
+
   .reviews__item {
     display: flex;
     flex-direction: column-reverse;
@@ -43,12 +53,12 @@
   .reviews__autor {
     @include opensansbold;
     @include f-size(20px, 30px);
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 
   .reviews__text {
     width: 620px;
-    margin-bottom: 36px;
+    margin-bottom: 34px;
 
     @include f-size(18px, 30px);
   }
@@ -68,11 +78,52 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
+    position: relative;
     margin: 0 auto;
-    padding-top: 180px;
-    padding-bottom: 40px;
+    padding-top: 170px;
+    padding-bottom: 50px;
     padding-right: 0;
     padding-left: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: calc(50% - 39px);
+      top: 55px;
+      width: 79px;
+      height: 64px;
+      background-image: url("/img/icon-quotes.svg");
+      background-position: top;
+      background-repeat: no-repeat;
+      opacity: 0.1;
+    }
+  }
+
+  .reviews__wrapper {
+    justify-content: space-between;
+  }
+
+  .reviews__prev,
+  .reviews__next {
+    display: block;
+    width: 22px;
+    padding-top: 25px;
+    opacity: 0.3;
+  }
+
+  .reviews_prev-icon,
+  .reviews_next-icon {
+    fill: $color-dark;
+  }
+
+  .reviews__prev[href]:hover,
+  .reviews__next[href]:hover {
+    opacity: 0.6;
+  }
+
+  .reviews__prev[href]:active,
+  .reviews__next[href]:active {
+    opacity: 0.1;
   }
 
   .reviews__autor {
@@ -87,9 +138,5 @@
 
   .reviews__autor-add {
     @include f-size(18px, 30px);
-  }
-
-  .reviews__toggles {
-    display: none;
   }
 }

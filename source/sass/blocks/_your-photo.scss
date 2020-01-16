@@ -34,6 +34,12 @@
 
 .your-photo__tools {
   padding-top: 40px;
+  margin-bottom: 33px;
+}
+
+.your-photo__scales {
+  margin: 0 auto;
+  margin-bottom: 67px;
 }
 
 .your-photo__buttons {
@@ -50,11 +56,42 @@
   border: 3px solid $color-pink;
   color: $color-pink;
   margin-bottom: 10px;
+
+  &:hover {
+    background-color: $color-pink;
+    color: $color-white;
+  }
+
+  &:active {
+    background-color: $color-pink;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.your-photo__button--cancel,
+a.your-photo__button--cancel {
+  color: $color-dark;
+  background-color: $color-white;
+  border: 3px solid $color-dark;
+  opacity: 0.1;
+
+  &:hover,
+  &:focus {
+    color: $color-dark;
+    background-color: $color-white;
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: $color-dark;
+    color: $color-white;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .your-photo {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   .your-photo__description {
@@ -65,39 +102,78 @@
 
   .your-photo__wrapper {
     display: flex;
-    justify-content: space-between;
-    max-width: 774px;
-    margin: 0 auto;
-    padding-top: 57px;
+    justify-content: center;
+    padding-top: 60px;
   }
 
   .your-photo__image {
     width: 300px;
     height: 400px;
     margin: 0;
+    margin-right: 45px;
+    object-fit: cover;
+    flex-shrink: 0;
   }
 
   .your-photo__img {
     width: 300px;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .your-photo__tools-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 260px;
+    margin-right: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 56px;
+      right: -15px;
+      width: 275px;
+      height: 1px;
+      background-color: $bg-dark;
+      opacity: 0.1;
+      box-shadow: 0 72px 0 $bg-dark, 0 144px 0 $bg-dark;
+    }
   }
 
   .your-photo__tools {
-    padding-top: 10px;
+    padding-top: 7px;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  .your-photo__scales {
+    margin: 0;
   }
 
   .your-photo__buttons {
     width: 100%;
-    padding-top: 42px;
+    padding-top: 31px;
     padding-bottom: 60px;
   }
 
-  .your-photo__button {
-    width: 260px;
-    background-color: transparent;
-    border: 3px solid $color-pink;
-    color: $color-pink;
-    margin-bottom: 10px;
+  .your-photo__button--cancel {
+    color: $color-dark;
+    background-color: $color-white;
+    border: 3px solid $color-dark;
+    opacity: 0.1;
+
+    &:hover {
+      color: $color-dark;
+      background-color: $color-white;
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: $color-white;
+      background-color: $color-dark;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -107,24 +183,32 @@
   }
 
   .your-photo__wrapper {
-    max-width: 810px;
-    padding-top: 50px;
+    padding-top: 52px;
     padding-bottom: 50px;
     padding-right: 0;
-    padding-left: 15px;
+    padding-left: 0;
   }
 
   .your-photo__description {
     padding-top: 5px;
   }
 
-  .your-photo__tools {
-    padding-top: 0;
+  .your-photo__image {
+    margin-right: 80px;
   }
 
   .your-photo__tools-wrapper {
-    display: flex;
-    flex-direction: column;
+    width: 390px;
+    margin-right: 0;
+
+    &::before {
+      width: 410px;
+    }
+  }
+
+  .your-photo__tools {
+    margin-right: 45px;
+    padding-top: 0;
   }
 
   .your-photo__buttons {

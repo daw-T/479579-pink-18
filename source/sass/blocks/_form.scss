@@ -8,12 +8,30 @@
 }
 
 .form__input {
+  position: relative;
   width: 100%;
 
   @include f-size(18px, 30px);
   padding: 14px 20px 15px 20px;
   border: 2px solid $color-gray;
   background-color: transparent; //временно
+
+  &:hover {
+    border: 2px solid $color-dark;
+  }
+
+  &:focus {
+    border: 2px solid $color-dark;
+  }
+
+  &:active {
+    border: 2px solid $color-pink;
+  }
+}
+
+.form__input--phone {
+  padding-right: 80px;
+  order: 1;
 }
 
 .form__title {
@@ -22,10 +40,6 @@
   margin: 0 auto;
   line-height: 18px;
   text-align: center;
-
-  &--stealth { //заголовка то нет, то есть
-    display: none;
-  }
 }
 
 .form__button-wrapper {
@@ -53,11 +67,8 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    margin-top: 0;
-  }
-
-  .form__title--stealth { //заголовка то нет, то есть
-    display: block;
+    max-width: 960px;
+    margin: 0 auto;
   }
 
   .form__button-wrapper {
@@ -78,9 +89,5 @@
   .form__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  .form__note-stealth {
-    display: inline;
   }
 }

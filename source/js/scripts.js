@@ -18,7 +18,6 @@ if (navMain.classList.contains('main-nav--opened')) {
   navMain.classList.add('main-nav--closed');
 }
 
-console.log("test");
 button.addEventListener('click', function () {
   console.log("click botton");
   var button = this;
@@ -35,8 +34,24 @@ button.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--opened')) {
     navMain.classList.remove('main-nav--opened');
     navMain.classList.add('main-nav--closed');
-  }else {
+  } else {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
   }
 });
+
+// var mapLink = document.querySelector(".contacts__map");
+// var mapPopup = document.querySelector(".modal__map");
+// if (mapPopup !== null){
+//   var mapClose = mapPopup.querySelector(".modal__close");
+//
+//   mapLink.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     mapPopup.classList.add("modal-show");
+//   });
+//
+//   mapClose.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     mapPopup.classList.remove("modal-show");
+//   });
+// }

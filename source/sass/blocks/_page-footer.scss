@@ -19,14 +19,14 @@
 
 .page-footer__social {
   display: flex;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 140px;
+  width: 130px;
 }
 
 .page-footer__copyright-text {
@@ -49,7 +49,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    //border: 1px solid dodgerblue;
   }
 
   .page-footer__logo {
@@ -65,7 +64,20 @@
   .page-footer__copyright {
     width: 137px;
     margin-top: 8px;
-    margin-right: -5px;
+    margin-right: 0;
+  }
+
+  .page-footer__logo-academy {
+    fill: $color-pink;
+  }
+
+  .page-footer__copyright-logo:hover .page-footer__logo-academy {
+    fill: $color-dark;
+  }
+
+  .page-footer__copyright-logo:active .page-footer__logo-academy {
+    fill: $color-dark;
+    opacity: 0.3;
   }
 }
 
@@ -80,7 +92,7 @@
   }
 
   .page-footer__social {
-    margin-left: 10px;
+    margin-left: 5px;
   }
 
   .page-footer__copyright {

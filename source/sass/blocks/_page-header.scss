@@ -14,7 +14,7 @@
   align-items: center;
   margin: 0 auto;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
 }
 
 .logo__image {
@@ -29,33 +29,56 @@
   background-color: transparent;
   border: 0;
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px $color-dark, 0 0 7px #2f7cc0;
+  }
 }
 
 .page-header__toggle--invisible {
   display: none;
 }
 
-.page-header__toggle::before {
-  content: "";
-  height: 24px;
-  display: block;
-  background: $bg-dark url("../img/icon-menu-burger.svg") no-repeat 50% 50%;
-  background-size: 50px auto;
+.page-header__toggle--opened .page-header__toggle-cross {
+  display: none;
 }
 
-.page-header__toggle--closed.page-header__toggle::before {
-  content: "";
-  height: 24px;
-  display: block;
-  background: $bg-dark url("../img/icon-menu-cross.svg") no-repeat 50% 50%;
-  background-size: 25px auto;
+.page-header__toggle--closed .page-header__toggle-hambuger {
+  display: none;
+}
+
+.page-header__toggle .page-header__toggle-hambuger {
+  fill: $color-white;
+}
+
+.page-header__toggle--closed .page-header__toggle-cross {
+  fill: $color-white;
+}
+
+.page-header__toggle:hover .page-header__toggle-hambuger {
+  fill: $color-pink;
+  fill-opacity: 1;
+}
+
+.page-header__toggle--closed:hover .page-header__toggle-cross {
+  fill: $color-pink;
+  fill-opacity: 1;
+}
+
+.page-header__toggle:active .page-header__toggle-hambuger {
+  fill-opacity: 0.3;
+}
+
+.page-header__toggle--closed:active .page-header__toggle-cross {
+  fill-opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo-wrapper {
     margin: 0 auto;
     padding-top: 27px;
-    padding-bottom: 35px;
+    padding-bottom: 42px;
   }
 
   .logo__image {

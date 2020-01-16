@@ -10,15 +10,49 @@
 .achievements__title {
   width: 250px;
   margin-bottom: 40px;
-  padding-top: 34px;
+  padding-top: 36px;
+}
+
+.achievements__columns {
+  display: flex;
+  flex-direction: column;
 }
 
 .achievements__item {
   display: flex;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
+
+  &:first-child {
+    order: 1;
+  }
+
+  &:nth-child(2) {
+    order: 3;
+  }
+
+  &:nth-child(3) {
+    order: 5;
+  }
+
+  &:nth-child(4) {
+    order: 2;
+  }
+
+  &:nth-child(5) {
+    order: 4;
+  }
+
+  &:nth-child(6) {
+    order: 6;
+  }
 
   &:last-child {
     margin-bottom: 42px;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px $color-dark, 0 0 7px #2f7cc0;
   }
 }
 
@@ -48,6 +82,18 @@
   }
 }
 
+.achievements__checkbox:hover + .achievements__label::before {
+  border: 1px solid $color-dark;
+}
+
+.achievements__checkbox:focus + .achievements__label::before {
+  border: 1px solid $color-dark;
+}
+
+.achievements__checkbox:active + .achievements__label::before {
+  border: 1px solid $color-pink;
+}
+
 .achievements__checkbox:checked + .achievements__label::after {
   position: absolute;
   content: "";
@@ -55,7 +101,8 @@
   left: 9px;
   width: 22px;
   height: 17px;
-  background-image: url("../img/icon-yes.svg");
+  background-image: url("/img/icon-yes2.svg");
+  background-size: 22px 17px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -83,7 +130,7 @@
   }
 
   .achievements__item {
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
   .achievements__label {
@@ -93,6 +140,7 @@
 
 @media (min-width: $desktop-width) {
   .achievements {
+    margin-bottom: 43px;
     padding-right: 0;
     padding-bottom: 8px;
   }
@@ -100,6 +148,7 @@
   .achievements__fieldset {
     padding-left: 57px;
     padding-right: 45px;
+    padding-bottom: 11px;
   }
 
   .achievements__title {
@@ -108,15 +157,37 @@
 
   .achievements__columns {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .achievements__column {
-    max-width: 256px;
+  .achievements__item {
+    width: 256px;
     margin-right: 57px;
 
-    &:nth-child(3) {
+    &:nth-child(3n-1) {
+      width: 242px;
+    }
+
+    &:nth-child(3n) {
+      width: 221px;
       margin-right: 0;
+    }
+
+    &:nth-child(2) {
+      order: 2;
+    }
+
+    &:nth-child(3) {
+      order: 3;
+    }
+
+    &:nth-child(4) {
+      order: 4;
+    }
+
+    &:nth-child(5) {
+      order: 5;
     }
   }
 }

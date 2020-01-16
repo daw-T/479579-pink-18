@@ -65,7 +65,6 @@ a[href].site-list__link {
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 700px;
-    padding-right: 10px;
   }
 
   .site-list__item {
@@ -80,8 +79,8 @@ a[href].site-list__link {
 
   .site-list__link {
     display: block;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 
     @include opensans;
     @include f-size(18px, 18px);

@@ -1,16 +1,15 @@
 //.page-main {
-//  display: flex;
-//  flex-direction: column;
+//  margin-bottom: 20px;
 //}
 
-//@media (min-width: $tablet-width) {
-//  .page-main {
-//    width: 660px;
-//  }
-//}
-//
-//@media (min-width: $desktop-width) {
-//  .page-main {
-//    width: 1200px;
-//  }
-//}
+@media (min-width: $tablet-width) {
+  .page-main {
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    margin-bottom: 62px;
+  }
+}

@@ -1,30 +1,35 @@
-@import "blocks/fonts";
+@import "fonts";
 @import "variables";
 @import "mixins";
+@import "normalize";
 @import "blocks/scaffolding";
-@import "blocks/bg"; /*фон c картинкой или цветной фон*/
+@import "blocks/bg-color"; /*цветной фон*/
+@import "blocks/bg-pic"; /*фон c картинкой*/
 @import "blocks/container";
 @import "blocks/outlines"; /*временный фон*/
 @import "blocks/page-header";
 @import "blocks/stealth";
 @import "blocks/logo";
+@import "blocks/logo-footer";
 @import "blocks/main-nav";
 @import "blocks/site-list";
 @import "blocks/page-main";
 @import "blocks/download";
 @import "blocks/slogan";
 @import "blocks/button";
+@import "blocks/modal";
+@import "blocks/overlay";
 @import "blocks/advantages";
 @import "blocks/reviews";
-@import "blocks/slider__toggle";
 @import "blocks/price";
-@import "blocks/slider__list";
+@import "blocks/carousel";
 @import "blocks/contacts";
 @import "blocks/page-inner";
 @import "blocks/photo";
 @import "blocks/section-description";
 @import "blocks/your-photo";
 @import "blocks/tools";
+@import "blocks/scales";
 @import "blocks/page-footer";
 @import "blocks/social";
 @import "blocks/form";
@@ -33,3 +38,5 @@
 @import "blocks/app";
 @import "blocks/comment";
 @import "blocks/contacts-info";
+@import "blocks/stealth-mobile";
+@import "blocks/corner-white";
