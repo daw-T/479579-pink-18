@@ -56,6 +56,16 @@
   border: 3px solid $color-pink;
   color: $color-pink;
   margin-bottom: 10px;
+
+  &:hover {
+    background-color: $color-pink;
+    color: $color-white;
+  }
+
+  &:active {
+    background-color: $color-pink;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .your-photo__button--cancel,
@@ -145,24 +155,6 @@ a.your-photo__button--cancel {
     width: 100%;
     padding-top: 31px;
     padding-bottom: 60px;
-  }
-
-  .your-photo__button {
-    width: 260px;
-    background-color: transparent;
-    border: 3px solid $color-pink;
-    color: $color-pink;
-    margin-bottom: 10px;
-
-    &:hover {
-      background-color: $color-pink;
-      color: $color-white;
-    }
-
-    &:active {
-      background-color: $color-pink;
-      color: rgba(255, 255, 255, 0.3);
-    }
   }
 
   .your-photo__button--cancel {

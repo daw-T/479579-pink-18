@@ -64,6 +64,17 @@
       <div class="download__wrapper">
         <h2 class="visually-hidden">Скачать приложение</h2>
         <p class="download__slogan slogan">Взгляните на жизнь <br>иначе!</p>
+        <!--        <div class="download__image">-->
+        <!--          <picture>-->
+        <!--            <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">-->
+        <!--            <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">-->
+        <!--            <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">-->
+
+        <!--            <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">-->
+        <!--            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">-->
+        <!--            <img class="download__img" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" width="258" height="286" alt="Смартфон в руке">-->
+        <!--          </picture>-->
+        <!--        </div>-->
         <a href="https://www.apple.com/" class="download__button button button--transparent">Скачать приложение</a>
         <ul class="download__list">
           <li>
@@ -87,10 +98,7 @@
       <p class="advantages__slogan  slogan slogan--darkcolor">Устали от серости мегаполиса?</p>
       <p class="advantages__slogan slogan slogan--darkcolor">Нам есть, что вам <br>предложить!</p>
     </div>
-    <div class="bg bg__light-color advantages__bg-coner">
-      <svg class="advantages__coner" width="100%">
-        <use xlink:href="svg/sprite.svg#bg-coner"></use>
-      </svg>
+    <div class="bg-color corner-white">
       <div class="container">
         <div class="advantages__wrapper">
           <ul class="advantages__list">
@@ -113,7 +121,7 @@
         </div>
       </div>
     </div>
-    <div class="bg bg__transparent">
+    <div class="bg-color bg-color--transparent">
       <div class="container">
         <div class="advantages__time">
           <div class="advantages__time-wrapper">
@@ -130,8 +138,8 @@
     <div class="container">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
       <div class="reviews__wrapper">
-        <a class="carousel__prev" href="" role="button" aria-label="Предыдущая страница">
-          <svg class="carousel__next-icon" width="22" height="42">
+        <a class="reviews__prev" href="" role="button" aria-label="Предыдущая страница">
+          <svg class="reviews__prev-icon" width="22" height="42">
             <use xlink:href="svg/sprite.svg#icon-review-arrow-right"></use>
           </svg>
         </a>
@@ -141,8 +149,8 @@
             <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           </li>
         </ul>
-        <a class="carousel__next" href="" role="button" aria-label="Следующая страница">
-          <svg class="carousel__next-icon" width="22" height="42">
+        <a class="reviews__next" href="" role="button" aria-label="Следующая страница">
+          <svg class="reviews__next-icon" width="22" height="42">
             <use xlink:href="svg/sprite.svg#icon-review-arrow-left"></use>
           </svg>
         </a>
@@ -157,10 +165,7 @@
     </div>
   </section>
 
-  <section class="price">
-    <svg class="advantages__coner" width="100%">
-      <use xlink:href="svg/sprite.svg#bg-coner"></use>
-    </svg>
+  <section class="price corner-white">
     <div class="container">
       <h2 class="visually-hidden">Тарифы</h2>
       <div class="price__wrapper">
@@ -275,13 +280,11 @@
       </ul>
     </div>
     <section class="contacts__map-wripper">
-      <svg class="contacts__triangle" width="100%">
-        <use xlink:href="svg/sprite.svg#bg-triangle"></use>
-      </svg>
+      <h3 class="visually-hidden">Карта</h3>
       <picture>
         <source type="image/webp" media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/bg-map-mobile@1x.webp" srcset="img/bg-map-mobile@2x.webp 2x">
+        <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
 
         <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
         <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
@@ -298,11 +301,11 @@
 <footer class="page-footer page-footer__index">
   <div class="container">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo logo__footer" href="index.html">
-        <svg class="logo__blue-mobile" width="146" height="40">
+      <a class="page-footer__logo logo-footer" href="index.html">
+        <svg class="logo-footer__blue-mobile" width="146" height="40">
           <use xlink:href="svg/sprite.svg#logo__blue-mobile"></use>
         </svg>
-        <svg class="logo__blue-desktop" width="146" height="40">
+        <svg class="logo-footer__blue-desktop" width="146" height="40">
           <use xlink:href="svg/sprite.svg#logo__blue-desktop"></use>
         </svg>
       </a>

@@ -1,0 +1,9 @@
+.stealth-mobile {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .stealth-mobile {
+    display: inline;
+  }
+}

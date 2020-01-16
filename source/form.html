@@ -57,14 +57,15 @@
 </header>
 
 <main class="page-inner">
-  <div class="bg bg__pic">
+  <div class="bg-pic">
     <h1 class="page-inner__title slogan slogan__big">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </div>
   <div class="container">
     <p class="page-inner__description section-description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-      бонусную карту! <span class="page-inner__description--stealth">Пожалуйста, заполните форму ниже:</span></p>
+      бонусную карту! <span class="stealth-mobile">Пожалуйста, заполните форму ниже:</span></p>
   </div>
   <section class="form">
+    <h2 class="visually-hidden">Расскажите историю и участвуйте в розыгрыше приза</h2>
     <form class="form__wrapper" action="https://echo.htmlacademy.ru" method="post">
       <div class="container data">
         <fieldset class="data__fieldset">
@@ -82,20 +83,20 @@
           </div>
         </fieldset>
       </div>
-      <div class="bg bg__color-form app">
+      <div class="bg-color bg-color--transparent app">
         <div class="container">
           <fieldset class="app__fieldset">
             <legend class="form__title app__title">С каким приложением путешествовали?</legend>
             <div class="app__wrapper">
-              <div class="app__item">
+              <div class="app__item" tabindex="0">
                 <input class="app__checkbox" type="radio" name="app" value="pink-ios" id="form__pink-ios" checked>
                 <label class="app__label" for="form__pink-ios">Pink для iOS</label>
               </div>
-              <div class="app__item">
+              <div class="app__item" tabindex="0">
                 <input class="app__checkbox" type="radio" name="app" value="pink-android" id="form__pink-android">
                 <label class="app__label" for="form__pink-android">Pink на Android</label>
               </div>
-              <div class="app__item">
+              <div class="app__item" tabindex="0">
                 <input class="app__checkbox" type="radio" name="app" value="pink-windowsphone" id="form__pink-windowsphone">
                 <label class="app__label" for="form__pink-windowsphone">Windows Phone</label>
               </div>
@@ -104,32 +105,32 @@
         </div>
       </div>
 
-      <div class="bg bg__color-form achievements">
+      <div class="bg-color bg-color--transparent achievements">
         <div class="container">
           <fieldset class="achievements__fieldset">
             <legend class="achievements__title form__title">Ваши безбашенные достижения в путешествии</legend>
             <div class="achievements__columns">
-              <div class="achievements__item">
+              <div class="achievements__item" tabindex="0">
                 <input class="achievements__checkbox" type="checkbox" name="achievements" value="selfie" id="achievements__selfie" checked>
                 <label class="achievements__label" for="achievements__selfie">Сделал сэлфи с акулой</label>
               </div>
-              <div class="achievements__item">
+              <div class="achievements__item" tabindex="0">
                 <input class="achievements__checkbox" type="checkbox" name="achievements" value="chucknorris" id="achievements__chucknorris">
                 <label class="achievements__label" for="achievements__chucknorris">Видел Чака Норриса</label>
               </div>
-              <div class="achievements__item">
+              <div class="achievements__item" tabindex="0">
                 <input class="achievements__checkbox" type="checkbox" name="achievements" value="tower" id="achievements__tower" checked>
                 <label class="achievements__label" for="achievements__tower">Удержал башню</label>
               </div>
-              <div class="achievements__item">
+              <div class="achievements__item" tabindex="0">
                 <input class="achievements__checkbox" type="checkbox" name="achievements" value="sunburned" id="achievements__sunburned" checked>
                 <label class="achievements__label" for="achievements__sunburned">Обгорел на пляже</label>
               </div>
-              <div class="achievements__item">
+              <div class="achievements__item" tabindex="0">
                 <input class="achievements__checkbox" type="checkbox" name="achievements" value="souvenirs" id="achievements__souvenirs">
                 <label class="achievements__label" for="achievements__souvenirs">Накупил сувениров</label>
               </div>
-              <div class="achievements__item">
+              <div class="achievements__item" tabindex="0">
                 <input class="achievements__checkbox" type="checkbox" name="achievements" value="hotel" id="achievements__hotel">
                 <label class="achievements__label" for="achievements__hotel">Разгромил отель </label>
               </div>
@@ -140,15 +141,25 @@
 
       <div class="container contacts-info">
         <fieldset class="contacts-info__fieldset">
-          <legend class="form__title  form__title--stealth contacts-info__title">Контактная информация</legend>
+          <legend class="form__title  stealth-mobile contacts-info__title">Контактная информация</legend>
           <div class="contacts-info__wrapper">
-            <div class="data__item contacts-info__item">
+            <div class="contacts-info__item">
               <label class="contacts-info__contacts" for="form__phone">Номер телефона</label>
-              <input class="form__input form__input--phone" id="form__phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              <div class="contacts-info__phone">
+                <svg class="contacts-info__icon-phone" width="20px" height="20px">
+                  <use xlink:href="svg/sprite.svg#icon-phone"></use>
+                </svg>
+                <input class="form__input form__input--phone" id="form__phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              </div>
             </div>
-            <div class="data__item contacts-info__item">
-              <label class="data__contacts contacts-info__contacts" for="form__mail">Адрес почты</label>
-              <input class="form__input form__input--address" id="form__mail" type="email" name="mail" required placeholder="Введите почту*">
+            <div class="contacts-info__item">
+              <label class="contacts-info__contacts" for="form__mail">Адрес почты</label>
+              <div class="contacts-info__mail">
+                <svg class="contacts-info__icon-mail" width="18px" height="14px">
+                  <use xlink:href="svg/sprite.svg#icon-mail"></use>
+                </svg>
+                <input class="form__input form__input--address" id="form__mail" type="email" name="mail" required placeholder="Введите почту*">
+              </div>
             </div>
           </div>
         </fieldset>
@@ -173,11 +184,11 @@
 <footer class="page-footer page-footer">
   <div class="container">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo logo__footer" href="index.html">
-        <svg class="logo__blue-mobile" width="146" height="40">
+      <a class="page-footer__logo logo-footer" href="index.html">
+        <svg class="logo-footer__blue-mobile" width="146" height="40">
           <use xlink:href="svg/sprite.svg#logo__blue-mobile"></use>
         </svg>
-        <svg class="logo__blue-desktop" width="146" height="40">
+        <svg class="logo-footer__blue-desktop" width="146" height="40">
           <use xlink:href="svg/sprite.svg#logo__blue-desktop"></use>
         </svg>
       </a>
@@ -228,7 +239,7 @@
 <section class="modal modal__sent">
   <h2 class="modal__title modal__title--sent">Ваша заявка отправлена</h2>
   <p class="modal__description modal__description--sent">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>
-  <div class="bg bg__light-color modal__bg">
+  <div class="bg-color modal__bg">
     <button class="modal__close button button--form  button--sent" type="button" aria-label="Выход из модального окна">Закрыть окно</button>
   </div>
 </section>

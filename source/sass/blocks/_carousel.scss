@@ -14,11 +14,6 @@
   }
 }
 
-.carousel__prev,
-.carousel__next {
-  display: none;
-}
-
 .carousel__link {
   display: block;
   width: 6px;
@@ -50,28 +45,5 @@ a[href].carousel__link {
 @media (min-width: $desktop-width) {
   .carousel {
     display: none;
-  }
-
-  .carousel__prev,
-  .carousel__next {
-    display: block;
-    width: 22px;
-    padding-top: 25px;
-    opacity: 0.3;
-  }
-
-  .carousel_prev-icon,
-  .carousel_next-icon {
-    fill: $color-dark;
-  }
-
-  .carousel__prev[href]:hover,
-  .carousel__next[href]:hover {
-    opacity: 0.6;
-  }
-
-  .carousel__prev[href]:active,
-  .carousel__next[href]:active {
-    opacity: 0.1;
   }
 }

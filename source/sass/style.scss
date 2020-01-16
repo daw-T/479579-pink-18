@@ -3,12 +3,14 @@
 @import "mixins";
 @import "normalize";
 @import "blocks/scaffolding";
-@import "blocks/bg"; /*фон c картинкой или цветной фон*/
+@import "blocks/bg-color"; /*цветной фон*/
+@import "blocks/bg-pic"; /*фон c картинкой*/
 @import "blocks/container";
 @import "blocks/outlines"; /*временный фон*/
 @import "blocks/page-header";
 @import "blocks/stealth";
 @import "blocks/logo";
+@import "blocks/logo-footer";
 @import "blocks/main-nav";
 @import "blocks/site-list";
 @import "blocks/page-main";
@@ -36,3 +38,5 @@
 @import "blocks/app";
 @import "blocks/comment";
 @import "blocks/contacts-info";
+@import "blocks/stealth-mobile";
+@import "blocks/corner-white";

@@ -10,10 +10,29 @@
   @include fildset-reset;
 }
 
+.contacts-info__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 17px;
+
+  &:first-child {
+    margin-top: 2px;
+  }
+}
+
 .contacts-info__contacts {
   @include title-form;
   padding-left: 20px;
   margin-bottom: 7px;
+}
+
+.contacts-info__icon-phone {
+  display: none;
+}
+
+.contacts-info__icon-mail {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -37,39 +56,77 @@
   }
 
   .contacts-info__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 23px;
+    margin-bottom: 29px;
+
+    &:first-child {
+      margin-top: 0;
+    }
 
     &:last-child {
-      margin-bottom: 15px;
+      margin-bottom: 23px;
     }
   }
 
   .contacts-info__contacts {
     margin-top: 10px;
+    margin-bottom: 0;
     padding-left: 15px;
     order: 2;
   }
 
-  //.contacts-info__input {
-  //  position: relative;
-  //  padding-right: 60px;
-  //  order: 1;
-  //}
-  //
-  //.contacts-info__input--phone {
-  //  &::before {
-  //    position: absolute;
-  //    content: "";
-  //    top: 0;
-  //    right: 0;
-  //    width: 60px;
-  //    height: 60px;
-  //    background-color: $color-gray;
-  //  }
-  //}
+  .contacts-info__phone {
+    position: relative;
+    width: 100%;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 61px;
+      background-color: $color-gray;
+    }
+  }
+
+  .contacts-info__icon-phone {
+    position: absolute;
+    display: block;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    fill: $color-pink;
+  }
+
+  .contacts-info__mail {
+    position: relative;
+    width: 100%;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 61px;
+      background-color: $color-gray;
+    }
+  }
+
+  .contacts-info__icon-mail {
+    position: absolute;
+    display: block;
+    top: 23px;
+    right: 21px;
+    width: 18px;
+    height: 14px;
+    fill: $color-pink;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -78,6 +135,10 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .contacts-info__fieldset {
+    padding-bottom: 15px;
   }
 
   .contacts-info__title {

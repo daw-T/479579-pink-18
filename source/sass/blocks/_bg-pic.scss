@@ -1,9 +1,6 @@
-.bg {
+.bg-pic {
   width: 100%;
   margin: 0 auto;
-}
-
-.bg__pic {
   min-height: 240px;
   margin-top: -70px;
   padding-top: 70px;
@@ -18,16 +15,8 @@
   }
 }
 
-.bg__light-color {
-  background-color: $bg-lightgray;
-}
-
-.bg__color-form {
-  background-color: $bg-lightgray;
-}
-
 @media (min-width: $tablet-width) {
-  .bg__pic {
+  .bg-pic {
     min-height: 440px;
     margin-top: -110px;
     padding-top: 110px;
@@ -39,19 +28,10 @@
       background-size: 1200px auto;
     }
   }
-
-  .bg__color-form {
-    background-color: transparent;
-  }
-
-  .bg__transparent {
-    background-color: transparent;
-  }
 }
 
-
 @media (min-width: $desktop-width) {
-  .bg__pic {
+  .bg-pic {
     min-height: 400px;
     background-image: url("/img/bg-back-desktop@1x.jpg");
 

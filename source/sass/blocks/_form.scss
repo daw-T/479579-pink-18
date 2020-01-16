@@ -30,18 +30,8 @@
 }
 
 .form__input--phone {
-  padding-right: 60px;
+  padding-right: 80px;
   order: 1;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    width: 60px;
-    height: 60px;
-    background-color: $color-gray;
-  }
 }
 
 .form__title {
@@ -50,10 +40,6 @@
   margin: 0 auto;
   line-height: 18px;
   text-align: center;
-
-  &--stealth { //заголовка то нет, то есть
-    display: none;
-  }
 }
 
 .form__button-wrapper {
@@ -85,10 +71,6 @@
     margin: 0 auto;
   }
 
-  .form__title--stealth { //заголовка то нет, то есть
-    display: block;
-  }
-
   .form__button-wrapper {
     display: flex;
     flex-direction: row;
@@ -107,9 +89,5 @@
   .form__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  .form__note-stealth {
-    display: inline;
   }
 }

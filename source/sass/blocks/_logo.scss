@@ -21,30 +21,6 @@
   display: none;
 }
 
-.logo__blue-mobile {
-  width: 146px;
-  height: 40px;
-}
-
-.logo__blue-desktop {
-  display: none;
-}
-
-.logo__footer[href]:hover .logo__blue-mobile {
-  fill: $color-pink;
-}
-
-.logo__footer[href]:active .logo__blue-mobile {
-  fill: $color-dark;
-  opacity: 0.3;
-}
-
-//.logo img {
-//  display: block;
-//  width: 75px;
-//  height: 22px;
-//}
-
 @media (min-width: $tablet-width) {
   .logo__mobile {
     display: none;
@@ -64,11 +40,6 @@
   .logo[href]:active .logo__tablet {
     fill: $color-white;
     opacity: 0.3;
-  }
-
-  .logo img {
-    width: 146px;
-    height: 40px;
   }
 }
 
@@ -90,25 +61,6 @@
 
   .logo[href]:active .logo__desctop {
     fill: $color-white;
-    opacity: 0.3;
-  }
-
-  .logo__blue-mobile {
-    display: none;
-  }
-
-  .logo__blue-desktop {
-    display: block;
-    width: 146px;
-    height: 40px;
-  }
-
-  .logo__footer[href]:hover .logo__blue-desktop {
-    fill: $color-pink;
-  }
-
-  .logo__footer[href]:active .logo__blue-desktop {
-    fill: $color-dark;
     opacity: 0.3;
   }
 }

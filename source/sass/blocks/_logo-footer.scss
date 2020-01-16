@@ -1,0 +1,38 @@
+.logo-footer__blue-mobile {
+  width: 146px;
+  height: 40px;
+}
+
+.logo-footer__blue-desktop {
+  display: none;
+}
+
+.logo-footer[href]:hover .logo-footer__blue-mobile {
+  fill: $color-pink;
+}
+
+.logo-footer[href]:active .logo-footer__blue-mobile {
+  fill: $color-dark;
+  opacity: 0.3;
+}
+
+@media (min-width: $desktop-width) {
+  .logo-footer__blue-mobile {
+    display: none;
+  }
+
+  .logo-footer__blue-desktop {
+    display: block;
+    width: 146px;
+    height: 40px;
+  }
+
+  .logo-footer[href]:hover .logo-footer__blue-desktop {
+    fill: $color-pink;
+  }
+
+  .logo-footer[href]:active .logo-footer__blue-desktop {
+    fill: $color-dark;
+    opacity: 0.3;
+  }
+}
