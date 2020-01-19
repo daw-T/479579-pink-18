@@ -8,4 +8,14 @@
   .bg-color--transparent {
     background-color: transparent;
   }
+
+  .bg-color--advantages {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bg-color--advantages {
+    background-color: $bg-lightgray;
+  }
 }
