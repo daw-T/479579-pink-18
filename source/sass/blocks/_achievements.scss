@@ -75,8 +75,6 @@
     left: 0;
     width: 37px;
     height: 37px;
-    //background-color: $bg-white;
-    background-color: transparent; //временно
     border: 1px solid $color-gray;
     cursor: pointer;
   }
@@ -122,7 +120,7 @@
   }
 
   .achievements__title {
-    width: 430px;
+    width: 435px;
     margin-bottom: 45px;
     padding-top: 0;
     padding-right: 25px;
@@ -162,8 +160,8 @@
   }
 
   .achievements__item {
-    width: 256px;
-    margin-right: 57px;
+    width: 257px;
+    margin-right: 56px;
 
     &:nth-child(3n-1) {
       width: 242px;
