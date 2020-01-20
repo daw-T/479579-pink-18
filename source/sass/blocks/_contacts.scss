@@ -57,11 +57,6 @@
   color: $color-pink;
 }
 
-.contacts__text-link[href]:active {
-  color: $bg-dark;
-  opacity: 0.3;
-}
-
 .contacts__text-link[href]:hover {
   color: $bg-dark;
 
@@ -73,6 +68,15 @@
     left: 0;
     height: 1px;
     background-color: $bg-dark;
+  }
+}
+
+.contacts__text-link[href]:active {
+  color: $bg-dark;
+  opacity: 0.3;
+
+  &::before {
+    height: 0;
   }
 }
 

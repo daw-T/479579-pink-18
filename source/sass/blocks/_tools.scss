@@ -15,18 +15,20 @@
   @include list-reset;
 }
 
-.tools__crop {
-  fill: $color-pink;
-}
-
-.tools__fill {
-  fill: #283645;
-  opacity: 0.3;
-}
-
+.tools__crop,
+.tools__fill,
 .tools__contrast {
   fill: #283645;
   opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    fill: $color-pink;
+    opacity: 1;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -61,15 +63,11 @@
   .tools__fill {
     width: 25px;
     height: 22px;
-    fill: #d22856;
-    opacity: 1;
   }
 
   .tools__contrast {
     width: 16px;
     height: 16px;
-    fill: #d22856;
-    opacity: 1;
   }
 }
 
@@ -86,19 +84,15 @@
   .tools__crop {
     width: 44px;
     height: 44px;
-    fill: $color-pink;
   }
 
   .tools__fill {
     width: 48px;
     height: 43px;
-    fill: $color-pink;
-    opacity: 1;
   }
 
   .tools__contrast {
     width: 32px;
     height: 32px;
-    opacity: 1;
   }
 }

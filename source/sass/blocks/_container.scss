@@ -5,11 +5,66 @@
   max-width: 960px; // ограничивает максимальную ширину
   padding-left: 20px;
   padding-right: 20px;
+
+  &--download {
+    position: relative;
+  }
+
+  &--download::before { //картинка смартфон в руке
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: 108px;
+    width: 258px;
+    height: 286px;
+    background-image: url("/img/iphone-hand-mobile@1x.png");
+    background-position: top;
+    background-size: 258px 286px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/iphone-hand-mobile@2x.png");
+      background-size: 320px auto;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    &--download::before {
+      top: 70px;
+      width: 620px;
+      height: 545px;
+      background-image: url("/img/iphone-hand-tablet@1x.png");
+      background-size: 700px 545px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/iphone-hand-tablet@2x.png");
+        background-size: 320px auto;
+      }
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .container {
     padding-left: 10px;
     padding-right: 10px;
+
+    &--download::before {
+      top: 100px;
+      margin-right: 0;
+      width: 800px;
+      height: 645px;
+      background-image: url("/img/iphone-hand-desktop@1x.png");
+      background-size: 1050px 645px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/iphone-hand-desktop@2x.png");
+        background-size: 320px auto;
+      }
+    }
   }
 }

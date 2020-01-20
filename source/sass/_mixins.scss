@@ -45,3 +45,20 @@
   color: $color-pink;
   text-transform: uppercase;
 }
+
+@mixin track() {
+  box-sizing: border-box;
+  width: 240px;
+  height: 2px;
+  background-color: #273746;
+}
+
+@mixin thumb() {
+  border: 2px solid $color-pink;
+  height: 15px;
+  width: 15px;
+  margin-top: -7px;
+  border-radius: 50%;
+  background: $bg-white;
+  cursor: pointer;
+}
