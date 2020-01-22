@@ -5,44 +5,53 @@
   max-width: 960px; // ограничивает максимальную ширину
   padding-left: 20px;
   padding-right: 20px;
+}
 
-  &--download {
-    position: relative;
-  }
+.container--download {
+  position: relative;
 
-  &--download::before { //картинка смартфон в руке
+  &::before { //картинка смартфон в руке
     content: "";
     position: absolute;
     right: 0;
-    left: 0;
-    margin: 0 auto;
+    left: -50px;
     top: 108px;
     width: 258px;
     height: 286px;
+    margin: 0 auto;
     background-image: url("/img/iphone-hand-mobile@1x.png");
-    background-position: top;
+    background-position: top left;
     background-size: 258px 286px;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/iphone-hand-mobile@2x.png");
-      background-size: 320px auto;
+      background-size: 258px 286px;
+      background-position: top left;
+      background-repeat: no-repeat;
     }
   }
 }
 
 @media (min-width: $tablet-width) {
-  .container {
-    &--download::before {
-      top: 70px;
-      width: 620px;
+  .container--download {
+    &::before {
+      position: absolute;
+      top: 71px;
+      right: 0;
+      width: 473px;
       height: 545px;
+      margin-right: 20px;
       background-image: url("/img/iphone-hand-tablet@1x.png");
-      background-size: 700px 545px;
+      background-size: 473px 545px;
+      background-position: top right 0;
+      background-repeat: no-repeat;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("/img/iphone-hand-tablet@2x.png");
-        background-size: 320px auto;
+        background-size: 473px auto;
+        background-position: top right 0;
+        background-repeat: no-repeat;
       }
     }
   }
@@ -52,18 +61,20 @@
   .container {
     padding-left: 10px;
     padding-right: 10px;
+  }
 
-    &--download::before {
-      top: 100px;
-      margin-right: 0;
-      width: 800px;
+  .container--download {
+    &::before {
+      top: 102px;
+      margin-right: 50px;
+      width: 563px;
       height: 645px;
       background-image: url("/img/iphone-hand-desktop@1x.png");
-      background-size: 1050px 645px;
+      background-size: 563px 645px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("/img/iphone-hand-desktop@2x.png");
-        background-size: 320px auto;
+        background-size: 563px 645px;
       }
     }
   }

@@ -33,7 +33,7 @@
   font-style: normal;
 }
 
-@mixin f-size ($font-size: 14px, $line-height: 24px) {
+@mixin f-size($font-size: 14px, $line-height: 24px) {
   font-size: $font-size;
   line-height: $line-height;
 }
@@ -54,10 +54,11 @@
 }
 
 @mixin thumb() {
+  position: relative;
+  top: -8px;
   border: 2px solid $color-pink;
   height: 15px;
   width: 15px;
-  margin-top: -7px;
   border-radius: 50%;
   background: $bg-white;
   cursor: pointer;
