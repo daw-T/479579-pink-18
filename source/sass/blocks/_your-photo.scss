@@ -34,12 +34,11 @@
 
 .your-photo__tools {
   padding-top: 40px;
-  margin-bottom: 33px;
+  margin-bottom: 21px;
 }
 
 .your-photo__scales {
   margin: 0 auto;
-  margin-bottom: 67px;
 }
 
 .your-photo__buttons {
@@ -47,7 +46,7 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
-  padding-top: 42px;
+  padding-top: 37px;
   padding-bottom: 30px;
 }
 
@@ -153,8 +152,23 @@ a.your-photo__button--cancel {
 
   .your-photo__buttons {
     width: 100%;
-    padding-top: 31px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 33px;
+  }
+
+  .your-photo__button {
+    width: 260px;
+    margin-bottom: 24px;
+
+    &:hover {
+      background-color: $color-pink;
+      color: $color-white;
+    }
+
+    &:active {
+      background-color: $color-pink;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .your-photo__button--cancel {

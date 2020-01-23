@@ -33,6 +33,11 @@
   }
 }
 
+.price .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @media (min-width: $tablet-width) {
   .container--download {
     &::before {
@@ -54,6 +59,11 @@
         background-repeat: no-repeat;
       }
     }
+  }
+
+  .price .container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -77,5 +87,10 @@
         background-size: 563px 645px;
       }
     }
+  }
+
+  .price .container {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

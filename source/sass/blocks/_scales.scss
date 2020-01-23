@@ -11,52 +11,92 @@
 }
 
 .scales__item {
-  position: absolute;
-  top: 0;
-  left: 0;
+  -webkit-appearance: none;
   width: 100%;
-  height: 25px;
-  background: transparent;
+  height: 24px;
+  margin: 0 auto 26px;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
 
-  &,
-  &::-webkit-slider-thumb {
-    appearance: none;
+  &::-webkit-slider-thumb:active {
+    background-color: $color-pink;
+  }
+
+  &::-moz-range-thumb:active {
+    background-color: $color-pink;
+  }
+
+  &::-ms-thumb:active {
+    background-color: $color-pink;
+  }
+
+  &::-moz-focus-outer {
+    border: none;
   }
 
   &::-webkit-slider-runnable-track {
-    @include track;
-  }
-
-  &::-moz-range-track {
-    @include track;
-  }
-
-  &::-ms-track {
-    @include track;
-  }
-
-  &::-ms-fill-lower {
-    display: none;
+    height: 2px;
+    background-color: $color-dark;
   }
 
   &::-webkit-slider-thumb {
-    margin-top: 0;
+    -webkit-appearance: none;
+    box-sizing: content-box;
+    width: 11px;
+    height: 11px;
+    margin-top: -7px;
+    background-color: $color-white;
+    border: 2px solid $color-pink;
+    border-radius: 50%;
+    cursor: pointer;
+  }
 
-    @include thumb;
+  &::-moz-range-track {
+    -moz-appearance: none;
+    width: 100%;
+    height: 2px;
+    background-color: $color-dark;
+    outline: none;
+    border: none;
   }
 
   &::-moz-range-thumb {
-    @include thumb;
+    -moz-appearance: none;
+    width: 11px;
+    height: 11px;
+    border: 2px solid $color-pink;
+    border-radius: 50%;
+    background-color: $bg-white;
+    cursor: pointer;
   }
 
-  &::-ms-thumb {
-    margin-top: 0;
-
-    @include thumb;
+  &::-ms-fill-lower,
+  &::-ms-fill-upper {
+    background: transparent;
   }
 
   &::-ms-tooltip {
     display: none;
+  }
+
+  &::-ms-track {
+    width: 100%;
+    height: 0;
+    background-color: $color-dark;
+    color: transparent;
+    border-color: transparent;
+  }
+
+  &::-ms-thumb {
+    width: 11px;
+    height: 11px;
+    padding: 0;
+    border: 2px solid $color-pink;
+    border-radius: 50%;
+    background-color: $color-white;
+    cursor: pointer;
   }
 }
 
@@ -68,12 +108,6 @@
   display: none;
 }
 
-.scales__item:hover::-webkit-slider-thumb,
-.scales__item:focus::-webkit-slider-thumb,
-.scales__item:active::-webkit-slider-thumb {
-  background-color: $color-pink;
-  outline: none;
-}
 
 @media (min-width: $tablet-width) {
   .scales {
