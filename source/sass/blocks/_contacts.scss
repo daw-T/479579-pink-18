@@ -5,7 +5,7 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: 133px;
+    bottom: 135px;
     width: 100%;
     height: 70px;
     background-image: url("/img/bg-triangle-white-footer.svg");
@@ -57,11 +57,6 @@
   color: $color-pink;
 }
 
-.contacts__text-link[href]:active {
-  color: $bg-dark;
-  opacity: 0.3;
-}
-
 .contacts__text-link[href]:hover {
   color: $bg-dark;
 
@@ -73,6 +68,15 @@
     left: 0;
     height: 1px;
     background-color: $bg-dark;
+  }
+}
+
+.contacts__text-link[href]:active {
+  color: $bg-dark;
+  opacity: 0.3;
+
+  &::before {
+    height: 0;
   }
 }
 
@@ -104,7 +108,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     &::before {
-      bottom: 278px;
+      bottom: 280px;
       height: 100px;
     }
   }
@@ -120,7 +124,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 660px;
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 12px;
   }
@@ -165,7 +169,7 @@
     width: 100%;
 
     &::before {
-      bottom: 283px;
+      bottom: 285px;
       height: 200px;
     }
   }

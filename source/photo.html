@@ -7,10 +7,9 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
   <meta name="format-detection" content="telephone=no">
-<!--  <link href="sass/normalize.scss" rel="stylesheet">-->
   <link href="css/style.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="body-photo">
 
 <div style="display: none;">
   <include src="build/img/sprite1.svg"></include>
@@ -33,11 +32,11 @@
         </a>
         <button class="page-header__toggle page-header__toggle--invisible" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <svg class="page-header__toggle-hambuger" width="50" height="24">
-            <use xlink:href="svg/sprite.svg#hambuger"></use>
+          <svg class="page-header__toggle-hamburger" width="50" height="24">
+            <use xlink:href="img/sprite1.svg#icon-menu-burger"></use>
           </svg>
           <svg class="page-header__toggle-cross" width="24" height="24">
-            <use xlink:href="svg/sprite.svg#icon-menu-cross"></use>
+            <use xlink:href="img/sprite1.svg#icon-menu-cross"></use>
           </svg>
         </button>
       </div>
@@ -71,7 +70,7 @@
   <section class="photo">
     <h2 class="visually-hidden">Фотографии с описаниями</h2>
     <div class="photo__panorama-wrarrer">
-      <div class="photo__panorama photo__panorama—label">
+      <div class="photo__panorama photo__panorama--label">
         <picture>
           <source type="image/webp" media="(min-width: 960px)" srcset="/img/panorama-desktop@1x.webp 1x, /img/panorama-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 660px)" srcset="/img/panorama-tablet@1x.webp 1x, /img/panorama-tablet@2x.webp 2x">
@@ -365,9 +364,10 @@
   </div>
 </footer>
 
-<script src="js/scripts.js"></script>
 <script src="js/svg4everybody.min.js"></script>
 <script>svg4everybody();</script>
+<script src="js/picturefill.min.js"></script>
+<script src="js/scripts.js"></script>
 
 </body>
 </html>

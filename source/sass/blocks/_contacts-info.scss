@@ -79,18 +79,7 @@
   }
 
   .contacts-info__phone {
-    position: relative;
     width: 100%;
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      right: 0;
-      width: 60px;
-      height: 61px;
-      background-color: $color-gray;
-    }
   }
 
   .contacts-info__icon-phone {
@@ -101,21 +90,12 @@
     width: 20px;
     height: 20px;
     fill: $color-pink;
+    z-index: 1;
   }
 
   .contacts-info__mail {
     position: relative;
     width: 100%;
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      right: 0;
-      width: 60px;
-      height: 61px;
-      background-color: $color-gray;
-    }
   }
 
   .contacts-info__icon-mail {
@@ -126,6 +106,7 @@
     width: 18px;
     height: 14px;
     fill: $color-pink;
+    z-index: 1;
   }
 }
 

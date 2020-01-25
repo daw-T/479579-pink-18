@@ -10,7 +10,7 @@ DataButton.addEventListener("click", function (evt) {
   var inputs = document.querySelectorAll(".form__wrapper input[required]");
   var success = true;
   inputs.forEach(function (item) {
-    success = success && (item.value != '');
+    success = success && (item.value != "");
   });
   console.log(success);
   if (success === false) {

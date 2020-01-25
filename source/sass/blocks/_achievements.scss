@@ -49,15 +49,6 @@
   &:last-child {
     margin-bottom: 42px;
   }
-
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 5px $color-dark, 0 0 7px #2f7cc0;
-  }
-}
-
-.achievements__checkbox[type="checkbox"] {
-  display: none;
 }
 
 .achievements__label {
@@ -80,11 +71,12 @@
   }
 }
 
-.achievements__checkbox:hover + .achievements__label::before {
+.achievements__checkbox:focus + .achievements__label::before {
+  box-shadow: 0 0 5px $color-dark, 0 0 7px #2f7cc0;
   border: 1px solid $color-dark;
 }
 
-.achievements__checkbox:focus + .achievements__label::before {
+.achievements__checkbox:hover + .achievements__label::before {
   border: 1px solid $color-dark;
 }
 
@@ -144,8 +136,8 @@
   }
 
   .achievements__fieldset {
-    padding-left: 57px;
-    padding-right: 45px;
+    padding-left: 52px;
+    padding-right: 40px;
     padding-bottom: 11px;
   }
 
@@ -161,7 +153,7 @@
 
   .achievements__item {
     width: 257px;
-    margin-right: 56px;
+    margin-right: 53px;
 
     &:nth-child(3n-1) {
       width: 242px;

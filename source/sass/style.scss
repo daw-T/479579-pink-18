@@ -2,11 +2,11 @@
 @import "variables";
 @import "mixins";
 @import "normalize";
-@import "blocks/scaffolding";
+@import "scaffolding";
 @import "blocks/bg-color"; /*цветной фон*/
 @import "blocks/bg-pic"; /*фон c картинкой*/
 @import "blocks/container";
-@import "blocks/outlines"; /*временный фон*/
+@import "blocks/body-photo";
 @import "blocks/page-header";
 @import "blocks/stealth";
 @import "blocks/logo";

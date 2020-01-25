@@ -47,16 +47,6 @@ a[href].site-list__link {
     color: $color-white;
     opacity: 0.3;
   }
-
-  &:active::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 9px;
-    left: 0;
-    height: 2px;
-    background-color: $bg-white;
-  }
 }
 
 @media (min-width: $desktop-width) {

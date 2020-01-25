@@ -27,10 +27,6 @@
   }
 }
 
-.app__checkbox[type="radio"] {
-  display: none;
-}
-
 .app__label {
   position: relative;
   padding-top: 2px;
@@ -50,6 +46,10 @@
     border-radius: 50%;
     cursor: pointer;
   }
+}
+
+.app__checkbox:focus + .app__label::before {
+  box-shadow: 0 0 5px $color-dark, 0 0 7px #2f7cc0;
 }
 
 .app__checkbox:hover + .app__label::before {

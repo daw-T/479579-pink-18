@@ -82,6 +82,15 @@
     margin: 0;
     text-align: right;
   }
+
+  .form__input--phone {
+    position: relative;
+    background-image: linear-gradient(to left, $color-gray 60px, $color-white 60px);
+  }
+
+  .form__input--address {
+    background-image: linear-gradient(to left, $color-gray 60px, $color-white 60px);
+  }
 }
 
 @media (min-width: $desktop-width) {
