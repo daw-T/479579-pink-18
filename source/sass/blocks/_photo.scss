@@ -20,7 +20,7 @@
   object-fit: cover;
 }
 
-.photo__panorama—label {
+.photo__panorama--label {
   position: relative;
 
   &::after {
@@ -145,7 +145,7 @@
     object-fit: cover;
   }
 
-  .photo__panorama—label {
+  .photo__panorama--label {
     &::after {
       top: 58px;
     }
@@ -157,7 +157,7 @@
 
   .photo__description {
     width: 100%;
-    min-height: 155px;
+    height: 155px;
     padding: 23px 15px 23px 26px;
   }
 
@@ -196,6 +196,7 @@
 
   .photo__item {
     width: 300px;
+    min-height: 455px;
     margin-right: 20px;
 
     &:nth-child(2n) {
@@ -242,7 +243,7 @@
     width: 760px;
   }
 
-  .photo__panorama—label {
+  .photo__panorama--label {
     &::after {
       right: 130px;
     }
