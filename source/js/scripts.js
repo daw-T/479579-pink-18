@@ -6,8 +6,6 @@ var navMain = document.querySelector(".main-nav");
 var button = document.querySelector(".page-header__toggle");
 var pageHeader = document.querySelector(".page-header");
 
-console.log(button);
-
 if (button.classList.contains("page-header__toggle--invisible")) {
   button.classList.remove("page-header__toggle--invisible");
   button.classList.add("page-header__toggle--opened");
